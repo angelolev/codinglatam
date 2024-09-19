@@ -1,6 +1,6 @@
 ## Trello Card
 
-[trello.com/YOUR-CARD]
+[TICKET DESCRIPTION](https://trello.com/c/TICKET-ID)
 
 ## Add PR description
 
