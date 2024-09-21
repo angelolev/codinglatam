@@ -7,7 +7,7 @@ export const elementos = [
       hasButton: true,
       reverseButton:false ,
       buttonText: "Proximamente",
-      buttonClass: "mt-2 bg-primary-300 text-sm rounded-md text-[#171717] py-1 px-4",
+      buttonClass: " bg-primary-300 text-sm rounded-md text-[#171717] py-1 px-4",
       flex: false
     },
     {
