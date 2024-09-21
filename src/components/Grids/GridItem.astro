@@ -1,0 +1,47 @@
+---
+import Button from '../buttons/button.astro';
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  gridClasses: string;
+  hasButton: boolean;
+  buttonText?: string;
+  buttonClass?: string;
+  reverseButton?: boolean;
+  flex: boolean;
+}
+
+const {
+  title,
+  description,
+  image,
+  gridClasses,
+  hasButton,
+  buttonText,
+  buttonClass,
+  reverseButton,
+  flex,
+} = Astro.props as Props;
+---
+<div class={`h-[325px] overflow-hidden bg-[#1e1e1e] ${gridClasses} rounded-md    border border-gray-800 ${flex ? 'flex' : ''}`}>
+  <section class=`px-5  flex flex-col ${reverseButton && " flex-col-reverse justify-center " } gap-5 `>    
+        {hasButton && (
+            <div class="mt-5">
+                <Button class={buttonClass} text={buttonText} />
+            </div>
+        )}
+    
+    <div>
+        <h2 class={`text-2xl font-bold  ${!flex ? 'text-center' : ''}`}>{title}</h2>
+        <p class={`text-gray-300 mt-3 ${!flex ? 'text-center' : ''}`}>{description}</p>
+    </div>
+  </section>
+  {flex ? (
+    <img class="relative w-full" src={image} alt={title} />
+  ) : (
+    <div class={`grid ${!flex && 'mt-10'} ${!hasButton ? 'justify-center' : ''}`}>
+      <img class={`relative ${!flex ? 'w-full' : ''}`} src={image} alt={title} />
+    </div>
+  )}
+</div>
