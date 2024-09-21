@@ -24,8 +24,8 @@ const {
   flex,
 } = Astro.props as Props;
 ---
-<div class={`h-[325px] overflow-hidden bg-[#1e1e1e] ${gridClasses} rounded-md    border border-gray-800 ${flex ? 'flex' : ''}`}>
-  <section class=`px-5  flex flex-col ${reverseButton && " flex-col-reverse justify-center " } gap-5 `>    
+<div class={`h-[325px] hover:border-primary-600 overflow-hidden bg-[#1e1e1e] ${gridClasses} rounded-md    border border-gray-800 ${flex ? 'flex' : ''}`}>
+  <section class=`px-5 mt-2  flex flex-col ${reverseButton && " flex-col-reverse justify-center " } gap-5 `>    
         {hasButton && (
             <div class="mt-5">
                 <Button class={buttonClass} text={buttonText} />
