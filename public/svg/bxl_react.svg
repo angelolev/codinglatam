@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="114.01494"
+   height="101.63882"
+   viewBox="0 0 114.01494 101.63882"
+   fill="none"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <path
+     d="m 66.681338,49.987414 c 0,5.2177 -4.3276,9.4663 -9.6894,9.4663 -5.3618,0 -9.6894,-4.2486 -9.6894,-9.4663 0,-5.2177 4.3276,-9.4662 9.6894,-9.4662 5.3618,0 9.6894,4.2485 9.6894,9.4662 z"
+     stroke="#858585"
+     id="path1"
+     style="fill:#858585;fill-opacity:1" />
+  <g
+     id="g9"
+     transform="translate(-11.508062,-12.797186)">
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:0.943116;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9"
+       cx="68.494019"
+       cy="-62.570415"
+       rx="52.673981"
+       ry="18.560549"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:1.06158;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9-5"
+       cx="68.515533"
+       cy="-62.839931"
+       rx="56.476681"
+       ry="21.933245"
+       transform="scale(1,-1)" />
+  </g>
+  <g
+     id="g9-6"
+     transform="matrix(0.4900427,0.86614755,-0.86614755,0.4900427,77.903071,-39.517573)">
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:0.943116;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9-2"
+       cx="68.494019"
+       cy="-62.570415"
+       rx="52.673981"
+       ry="18.560549"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:1.06158;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9-5-9"
+       cx="68.515533"
+       cy="-62.839931"
+       rx="56.476681"
+       ry="21.933245"
+       transform="scale(1,-1)" />
+  </g>
+  <g
+     id="g9-6-1"
+     transform="matrix(-0.4900427,0.86614755,0.86614755,0.4900427,36.18669,-39.121232)">
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:0.943116;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9-2-2"
+       cx="68.494019"
+       cy="-62.570415"
+       rx="52.673981"
+       ry="18.560549"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="opacity:0.94;fill:none;fill-opacity:1;stroke:#858585;stroke-width:1.06158;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path9-5-9-7"
+       cx="68.515533"
+       cy="-62.839931"
+       rx="56.476681"
+       ry="21.933245"
+       transform="scale(1,-1)" />
+  </g>
+</svg>
