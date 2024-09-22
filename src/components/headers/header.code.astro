@@ -1,0 +1,100 @@
+---
+import Nav from '../navigations/nav.v1.astro'
+import Button from '../buttons/button.astro'
+---
+
+<style>
+    
+     #Container-text {                  
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid orange; /* Cursor */
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    
+    @keyframes parpadeo {
+      from { border-right-color: orange; }
+      to { border-right-color: transparent; }
+    }
+
+    #Container-text {
+      animation: parpadeo .5s  infinite;
+    }
+
+</style>
+
+<header  class="mb-44">
+      <Nav />
+      <section class="mt-32 flex flex-col justify-center items-center" >
+        <div class="w-4/6 flex flex-col items-center">
+            <h1 class="text-5xl text-center font-bold mb-10">Expert Developers for a Connected <span id="Container-text" class="text-secondary-500"/></h1>
+            <p class="text-center w-3/4 text-gray-400">Conéctate con otros desarrolladores, aprende nuevas tecnologías y colabora en proyectos reales. ¡Tu siguiente nivel como programador comienza aquí!</p>
+        </div>
+        <div class="flex justify-center gap-5 mt-10">
+            <Button class="bg-primary-500 px-4 py-1 rounded-md" text="Unirte" />
+            <Button text="Nosotros" />
+        </div>
+      </section>
+</header>
+
+<script type="module">    
+// Array específico con los textos que deseas mostrar aleatoriamente
+const textos = [
+  "</Work>",
+  "</Projects>",
+  "</Coding>",
+  "</Learning>",
+  "</Developers>",
+    "</Community>",
+];
+
+
+const contenedorTexto = document.getElementById('Container-text');
+
+
+const velocidadEscritura = 300; 
+const velocidadBorrado = 100;     
+const pausaEntreTextos = 3000;   
+
+let indiceTextoActual = 0;       
+let indiceCaracter = 0;          
+let escribiendo = true;          
+
+function tipoEscribir() {
+  const texto = textos[indiceTextoActual];
+  
+  if (escribiendo) {
+    
+    contenedorTexto.textContent = texto.substring(0, indiceCaracter + 1);
+    indiceCaracter++;
+
+    if (indiceCaracter === texto.length) {
+      escribiendo = false;
+
+      setTimeout(tipoEscribir, pausaEntreTextos);
+    } else {
+      setTimeout(tipoEscribir, velocidadEscritura);
+    }
+  } else {
+    
+    contenedorTexto.textContent = texto.substring(0, indiceCaracter - 1);
+    indiceCaracter--;
+
+    if (indiceCaracter === 0) {
+      escribiendo = true;
+    
+      indiceTextoActual = Math.floor(Math.random() * textos.length);
+      setTimeout(tipoEscribir, 500); // Pausa antes de escribir
+    } else {
+      setTimeout(tipoEscribir, velocidadBorrado);
+    }
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', tipoEscribir);
+
+
+</script>
