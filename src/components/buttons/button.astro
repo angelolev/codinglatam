@@ -1,10 +1,21 @@
 ---
 
-const {text, ...props } = Astro.props; 
+const { type, text, ...props } = Astro.props; 
 
 ---
-
+{
+!type && 
 <button {...props} class=" border border-primary-300  text-md rounded-md text-white py-1 px-4 " >
     {text}
+</button> 
+}
+{
+type === "icon" &&
+<button {...props} class=" border border-primary-300  text-md rounded-md text-white py-1 px-4 " >
+    {text}
+    <span>
+        <img src="./svg/ic_baseline-discord.svg" alt="">
+    </span>
 </button>
+}
 
