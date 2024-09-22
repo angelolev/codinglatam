@@ -1,0 +1,17 @@
+---
+const {
+    cardItems 
+} = Astro.props;
+---
+<ul>
+    {
+    cardItems &&
+    cardItems.map((item: { title: unknown; }, index: any) => (
+            <li>
+                <button>
+                    {item.title}
+                </button>
+            </li>
+        ))
+    }    
+</ul>

@@ -1,0 +1,93 @@
+---
+import Button from '../buttons/button.astro'
+import NavList from '../navigations/navList.v1.astro'
+const navList =   [
+  {
+    title: "Cursos",
+    url: "/cursos",
+  },
+  {
+    title: "Libros",
+    url: "/libros",
+  },
+  {
+    title: "Proyectos",
+    url: "/proyectos",
+  },
+  {
+    title: "Empleos",
+    url: "/empleos",
+  }  
+];
+const navListTwo =   [
+  {
+    title: "Cursos",
+    url: "/cursos",
+  },
+  {
+    title: "Libros",
+    url: "/libros",
+  },
+  {
+    title: "Proyectos",
+    url: "/proyectos",
+  },
+  {
+    title: "Empleos",
+    url: "/empleos",
+  }  
+];
+---
+<footer id="footer-newsletter">
+    <section id="newsletter" class="flex justify-center items-center my-32">
+        <div class="border border-gray-500 rounded-md w-1/2  px-20 py-10 bg-[#1A1A1A] ">
+            <h4 class="text-3xl text-center mb-9 font-bold">Recibe los nuevos cursos y talleres antes que nadie</h4>
+            <div class="gap-5 flex justify-center ">
+                <input class=" pl-2 bg-transparent border border-secondary-600 rounded-md" type="text" placeholder="Email">
+                <button class="text-[#1A1A1A] bg-primary-300 py-1 px-4 rounded-md">Suscríbete</button>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div>
+            <img src="./svg/logo.svg" alt="">
+            <section class="flex gap-2 mt-5 mb-10 ">
+                <a href="">
+                    <img src="./svg/hugeicons_instagram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./svg/hugeicons_instagram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./svg/facebook.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./svg/facebook.svg" alt="">
+                </a>
+            </section>
+            <h5>© Coding Latam 2024. Todos los derechos reservados</h5>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold w-3/4  mb-5">
+                Nuestra comunidad te espera!
+            </h4>
+            <Button text="Unirte" class="text-[#1A1A1A] bg-primary-300 py-1 px-4 rounded-md" />
+        </div>
+        <div>
+            <NavList cardItems={navList} />
+        </div>
+        <div>
+            <NavList cardItems={navListTwo} />
+        </div>
+    </section>
+</footer>
+<style>
+    #footer-newsletter section#footer  {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        border-top: 1px solid #6b6a6a;    
+        padding-top: 40px;  
+        padding-bottom: 20px;
+    }
+</style>

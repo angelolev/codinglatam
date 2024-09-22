@@ -1,0 +1,36 @@
+---
+import Button from "../buttons/button.astro"
+---
+
+<section class="flex justify-between mb-16">
+    <div>
+        <img src="./svg/logo.svg" alt="">
+    </div>
+    <nav id="navigation" class="gap-10 flex">
+        <button >Curso</button>
+        <button >Libros</button>
+        <button>Proyetos</button>
+        <button>Empleos</button>
+        <Button type="icon" class="flex gap-2 bg-primary-300 rounded-md py-1 px-4 text-[#171717]" text="Unirte" />
+    </nav>    
+</section>
+
+<style>
+    #navigation button {
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+    }
+    #navigation button:hover {
+        border-color: rgb(243 204 81 / var(--tw-bg-opacity));
+    }
+    #navigation button:focus {
+        border-color: rgb(72 134 175 / var(--tw-text-opacity));
+    }
+    #navigation button:active {
+        border-color:rgb(72 134 175 / var(--tw-text-opacity));
+    }    
+</style>
+
+<script>
+
+</script>
