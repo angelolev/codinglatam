@@ -1,10 +1,26 @@
 ---
 import Hero from "../components/Hero.astro";
+import JobCard from "../components/JobCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Inicio | Coding Latam">
   <Hero />
+  <section
+    class="jobs px-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto mb-8"
+  >
+    <h2
+      class="col-span-1 md:col-span-2 lg:col-span-3 text-center text-white font-bold mb-6"
+    >
+      Ofertas de trabajo
+    </h2>
+    <JobCard />
+    <JobCard />
+    <JobCard />
+    <JobCard />
+    <JobCard />
+    <JobCard />
+  </section>
 </Layout>
 
 <style></style>
