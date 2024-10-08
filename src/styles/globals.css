@@ -3,17 +3,17 @@ body {
 }
 
 h1 {
-  @apply text-[32px] leading-6 tracking-tighter-[.4px] md:text-5xl;
+  @apply text-[32px] leading-6 tracking-[0.4px] md:text-5xl;
 }
 
 h2 {
-  @apply text-2xl leading-6 tracking-tighter-[.4px] md:text-4xl;
+  @apply text-2xl leading-6 tracking-[0.4px] md:text-4xl;
 }
 
 h3 {
-  @apply text-xl leading-6 tracking-tighter-[.4px] md:text-[32px];
+  @apply text-xl leading-6 tracking-[0.4px] md:text-[32px];
 }
 
 p {
-  @apply text-[9px] leading-6 tracking-tighter-[.4px] md:text-xs lg:text-[14px];
+  @apply text-[9px] leading-6 tracking-[0.4px] md:text-xs lg:text-[14px];
 }

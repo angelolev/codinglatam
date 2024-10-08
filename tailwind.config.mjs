@@ -45,6 +45,7 @@ export default {
         },
         "light-black": "#1E1E1E",
         "light-gray": "#B5B5B5",
+        "black-border": "#3d3d3d",
       },
     },
   },
