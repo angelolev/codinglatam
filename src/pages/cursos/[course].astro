@@ -3,6 +3,7 @@ import { getEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import figmaLogo from "../../../public/figma.svg";
 import linkedinLogo from "../../../public/linkedin.svg";
+import calendarImage from "../../../public/calendar.svg";
 import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
@@ -29,7 +30,14 @@ const {
   instructor,
   project,
 } = courseData.data;
-const { Content } = await courseData.render();
+
+const dateObj = new Date(startDate);
+
+const formattedDate = dateObj.toLocaleDateString("es-PE", {
+  day: "2-digit",
+  month: "long",
+  year: "numeric",
+});
 ---
 
 <Layout title=`Curso: ${title} | Coding Latam`>
@@ -42,29 +50,28 @@ const { Content } = await courseData.render();
       <p class="max-w-2xl font-semibold text-lg mb-4">
         {description}
       </p>
-      <Link href={buyLink} variant="fill"> Comprar </Link>
+      <div class="dates flex gap-4 items-center mb-4">
+        <Image class="max-w-10" src={calendarImage} alt="Calendar" />
+        <p class="text-base">Inicio: {formattedDate}</p>
+      </div>
+
+      <Link href={buyLink} variant="fill"> Reservar mi lugar </Link>
     </div>
   </header>
-  <!-- <main class="max-w-6xl mx-auto px-4 relative"> -->
+
   <main class="relative">
-    <section class="topics max-w-6xl mx-auto px-4">
+    <section class="topics max-w-6xl mx-auto px-4 py-16">
       <h2>Temario</h2>
-      <ul class="list-disc pl-5">
-        {topics?.map((item, index) => <li>{item.title}</li>)}
+      <ul class="list-disc pl-5 flex flex-col gap-4">
+        {topics?.map((item) => <li>{item.title}</li>)}
       </ul>
-      <div class="figma flex gap-2 items-center my-6">
-        <Image class="max-w-10" src={figmaLogo} alt="Figma" />
-        <a target="_blank" class="underline underline-offset-4" href={figmaLink}
-          >Figma del proyecto</a
-        >
-      </div>
     </section>
     <section
-      class="py-8 instructor md:absolute right-0 top-0 md:text-center max-w-6xl mx-auto px-4"
+      class="py-8 instructor md:absolute right-0 lg:right-[10%] top-0 text-center max-w-6xl mx-auto px-4 md:py-0 md:pt-16"
     >
-      <p class="mb-6">Aprende con:</p>
+      <p class="text-base mb-6">Aprende con:</p>
       <div
-        class="content flex justify-start items-center md:justify-center gap-4 flex-wrap max-w-80"
+        class="content flex justify-center items-center gap-4 flex-wrap max-w-80"
       >
         <Image
           class="rounded-full"
@@ -75,7 +82,7 @@ const { Content } = await courseData.render();
         />
         <div class="name flex gap-2 items-center">
           <h3 class="text-primary-300">{instructor.name}</h3>
-          <Link href="" variant="none">
+          <Link href={instructor.linkedin} variant="none">
             <Image class="max-w-6" src={linkedinLogo} alt="Linkedin" />
           </Link>
         </div>
@@ -83,37 +90,35 @@ const { Content } = await courseData.render();
         <p>{instructor.role}</p>
       </div>
     </section>
-    <section class="project pt-4 max-w-6xl mx-auto px-4">
-      <h2>
-        Proyecto a desarrollar: <span class="text-white">{project.name}</span>
-      </h2>
-      <ul class="list-disc pl-5">
-        {project.topics.map((item, index) => <li>{item}</li>)}
-      </ul>
-    </section>
-    <section class="instructor-detail py-24 bg-black-border my-10">
+    <section class="project bg-black-border py-16">
       <div class="content max-w-6xl mx-auto px-4">
-        <h2>Conoce a <span class="text-white">{instructor.name}!</span></h2>
-        <p class="mt-4">{instructor.description}</p>
+        <h2>
+          Proyecto a desarrollar: <span class="text-white">{project.name}</span>
+        </h2>
+        <div class="figma flex gap-2 items-center my-6">
+          <Image class="max-w-10" src={figmaLogo} alt="Figma" />
+          <a
+            target="_blank"
+            class="underline underline-offset-4"
+            href={figmaLink}>Figma del proyecto</a
+          >
+        </div>
+        <ul class="list-disc pl-5 flex flex-col gap-4">
+          {project.topics.map((item) => <li>{item}</li>)}
+        </ul>
       </div>
     </section>
-    <section class="faqs pt-10 max-w-6xl mx-auto px-4">
-      <h2 class="my-6 text-primary-300">Preguntas frecuentes</h2>
-      {faqs?.map((item, index) => <FAQ {...item} />)}
-
-      <details>
-        <summary> ¿Por qué debería inscribirme? </summary>
-        <ul>
-          <li>El grupo de estudio es reducido (10 personas máximo).</li>
-          <li>Clases EN VIVO</li>
-          <li>Acceso a TODAS las sesiones grabadas</li>
-          <li>
-            45 minutos de ronda de preguntas al culminar CADA CLASE para que
-            aclares TODAS tus dudas
-          </li>
-          <li>PROYECTOS reales para tu PORTAFOLIO</li>
-        </ul>
-      </details>
+    <section class="instructor-detail py-16 my-10">
+      <div class="content max-w-6xl mx-auto px-4">
+        <h2>Conoce a <span class="text-white">{instructor.name}!</span></h2>
+        <div class="mt-4" set:html={instructor.description} />
+      </div>
+    </section>
+    <section class="faqs py-16 bg-black-border">
+      <div class="content max-w-6xl mx-auto px-4">
+        <h2 class="my-6 text-primary-300">Preguntas frecuentes</h2>
+        {faqs?.map((item) => <FAQ {...item} />)}
+      </div>
     </section>
     <section
       class="py-16 text-center grid grid-cols-1 gap-6 max-w-6xl mx-auto px-4"

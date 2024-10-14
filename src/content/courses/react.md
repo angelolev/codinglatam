@@ -12,10 +12,17 @@ faqs:
 
   - question: "¿Cómo se realizan las clases?"
     answer: "Se realizan en un ambiente virtual por medio de Google Meet. Cada
-      sesión será grabada y compartida con todas las personas inscritas."
+      sesión tiene una duración de 02 HORAS y también será grabada y compartida con todas las personas inscritas, con acceso ilimitado."
 
   - question: "¿Por qué debería inscribirme?"
-    answer: "Yes, you will receive a certificate of completion once you finish all course modules and pass the final project assessment."
+    answer: |
+      <ul>
+        <li>El grupo de estudio es reducido (10 personas máximo).</li>
+        <li>Clases EN VIVO</li>
+        <li>Acceso a TODAS las sesiones grabadas</li>
+        <li>45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
+        <li>PROYECTOS reales para tu PORTAFOLIO</li>
+      </ul>
 topics:
   - title: "¿Qué es JSX?"
 
@@ -42,7 +49,14 @@ topics:
   - title: "Organización de archivos y carpetas"
 instructor:
   name: "Angelo Leva"
-  description: "Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma. Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación."
+  description: |
+    <p class="mt-4">Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma.</p> 
+
+    <p class="mt-4">Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación.</p>
+
+    <p class="mt-4">Trabajo como arquitecto front-end ayudando a crear aplicaciones web de alto rendimiento. Disfruto aprendiendo cosas nuevas, desarrollando actividades de equipo y soluciones creativas.</p>
+
+    <p class="mt-4">Siempre estoy ansioso por aprender nuevas tecnologías y con un interés genuino por la mejor experiencia de usuario.</p>
   picture: "/angelo.jpeg"
   role: "Senior Frontend Developer"
   linkedin: "https://www.linkedin.com/in/angeloleva/"

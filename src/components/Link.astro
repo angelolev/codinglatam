@@ -9,11 +9,11 @@ const { href, variant } = Astro.props;
 const buttonClasses =
   variant === "fill" ? "bg-primary-400 text-black" : "text-white";
 
-const buttonBorder = variant === "none" ? "" : "border border-light-gray";
+const buttonBorder = variant === "none" ? "" : "p-3 border border-light-gray";
 ---
 
 <a
-  class=`block w-fit rounded-lg p-3 ${buttonBorder} ${buttonClasses}`
+  class=`block w-fit rounded-lg ${buttonBorder} ${buttonClasses}`
   href={href}
   target="_blank"
 >
