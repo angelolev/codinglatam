@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import courseImage from "../../public/curso-js.jpg";
+import Link from "./Link.astro";
+---
+
+<article
+  class="flex flex-wrap gap-6 justify-center border border-black-border pb-6"
+>
+  <Image src={courseImage} alt="Course logo" />
+  <h3>React desde cero</h3>
+  <p>
+    Domina la biblioteca más popular para desarrollo front-end. Desarrolla
+    aplicaciones web dinámicas y de alto rendimiento.
+  </p>
+  <Link label="Ir al curso" href="/cursos/react" variant="fill" />
+</article>

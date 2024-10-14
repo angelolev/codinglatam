@@ -1,3 +1,7 @@
+---
+import Link from "./Link.astro";
+---
+
 <section class="hero flex flex-col gap-6 py-16 px-6 md:text-center md:py-32">
   <h1
     class="text-4xl text-white font-bold md:max-w-[496px] md:mx-auto md:text-5xl"
@@ -9,16 +13,8 @@
   <p class="text-light-gray text-sm lg:text-lg">
     Aprende y comparte conocimiento con otros devs de la industria
   </p>
-  <div class="actions mt-8">
-    <a
-      class="bg-primary-400 rounded-lg p-3 border border-light-gray text-black"
-      target="_blank"
-      href="https://discord.com/invite/ySwYnQaveH">Únete</a
-    >
-    <a
-      class="rounded-lg p-3 border border-light-gray text-white"
-      href=""
-      target="_blank">Nosotros</a
-    >
+  <div class="actions mt-4 flex gap-x-4">
+    <Link label="Únete" variant="fill" />
+    <Link label="Nosotros" variant="outline" />
   </div>
 </section>

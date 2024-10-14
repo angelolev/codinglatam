@@ -1,4 +1,6 @@
 ---
+import CourseCard from "../components/CourseCard.astro";
+import CouseCardVariant from "../components/CouseCardVariant.astro";
 import Hero from "../components/Hero.astro";
 import JobCard from "../components/JobCard.astro";
 import Layout from "../layouts/Layout.astro";
@@ -20,6 +22,21 @@ import Layout from "../layouts/Layout.astro";
     <JobCard />
     <JobCard />
     <JobCard />
+  </section>
+  <section class="px-6 max-w-screen-xl mx-auto mb-8 text-center">
+    <h2 class="mb-8">Explora los últimos cursos</h2>
+    <p class="mb-8">
+      Aquí encontrarás una variedad de cursos diseñados para mejorar tus
+      conocimientos, ya sea que estés dando tus primeros pasos o buscando
+      perfeccionar tus habilidades.
+    </p>
+    <div class="list grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <CourseCard />
+      <CourseCard />
+      <CourseCard />
+      <CourseCard />
+      <CouseCardVariant />
+    </div>
   </section>
 </Layout>
 

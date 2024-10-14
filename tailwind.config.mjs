@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  safelist: ["bg-sky-500"],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-react": "url('/react-bg.jpg')",
+      },
       colors: {
         primary: {
           50: "#fef9ec",

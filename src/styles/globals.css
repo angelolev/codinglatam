@@ -3,17 +3,35 @@ body {
 }
 
 h1 {
-  @apply text-[32px] leading-6 tracking-[0.4px] md:text-5xl;
+  @apply text-[32px] leading-6 tracking-[0.4px] md:text-5xl font-bold;
 }
 
 h2 {
-  @apply text-2xl leading-6 tracking-[0.4px] md:text-4xl;
+  @apply text-2xl leading-6 tracking-[0.4px] md:text-4xl font-bold;
 }
 
 h3 {
-  @apply text-xl leading-6 tracking-[0.4px] md:text-[32px];
+  @apply text-xl leading-6 tracking-[0.4px] md:text-[28px] font-bold;
 }
 
 p {
-  @apply text-[9px] leading-6 tracking-[0.4px] md:text-xs lg:text-[14px];
+  @apply text-[14px] leading-6 tracking-[0.4px] md:text-base;
+}
+
+details {
+  @apply p-5 border border-black-border rounded-lg mb-4 cursor-pointer;
+
+  & p,
+  & ul {
+    @apply mt-4;
+  }
+
+  & ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+}
+
+summary {
+  @apply font-bold;
 }

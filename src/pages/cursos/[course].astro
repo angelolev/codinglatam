@@ -1,0 +1,147 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import figmaLogo from "../../../public/figma.svg";
+import linkedinLogo from "../../../public/linkedin.svg";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+import FAQ from "../../components/FAQ.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { course: "react" } },
+    { params: { course: "desarrollo-web" } },
+    { params: { course: "astro" } },
+  ];
+}
+
+const { course } = Astro.params;
+const courseData = await getEntry("courses", course);
+
+if (!courseData) {
+  throw new Error("Course not found");
+}
+
+const {
+  title,
+  description,
+  startDate,
+  figmaLink,
+  buyLink,
+  faqs,
+  topics,
+  instructor,
+  project,
+} = courseData.data;
+const { Content } = await courseData.render();
+---
+
+<Layout title=`Curso: ${title} | Coding Latam`>
+  <header
+    class={`bg-sky-500 bg-hero-${course} h-96 bg-cover bg-center relative flex items-center`}
+  >
+    <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
+    <div class="content max-w-6xl lg:mx-auto px-4 relative z-10 w-full">
+      <h1 class="text-white mb-6">{title}</h1>
+      <p class="max-w-2xl font-semibold text-lg mb-4">
+        {description}
+      </p>
+      <Link href={buyLink} variant="fill"> Comprar </Link>
+    </div>
+  </header>
+  <!-- <main class="max-w-6xl mx-auto px-4 relative"> -->
+  <main class="relative">
+    <section class="topics max-w-6xl mx-auto px-4">
+      <h2>Temario</h2>
+      <ul class="list-disc pl-5">
+        {topics?.map((item, index) => <li>{item.title}</li>)}
+      </ul>
+      <div class="figma flex gap-2 items-center my-6">
+        <Image class="max-w-10" src={figmaLogo} alt="Figma" />
+        <a target="_blank" class="underline underline-offset-4" href={figmaLink}
+          >Figma del proyecto</a
+        >
+      </div>
+    </section>
+    <section
+      class="py-8 instructor md:absolute right-0 top-0 md:text-center max-w-6xl mx-auto px-4"
+    >
+      <p class="mb-6">Aprende con:</p>
+      <div
+        class="content flex justify-start items-center md:justify-center gap-4 flex-wrap max-w-80"
+      >
+        <Image
+          class="rounded-full"
+          src={instructor.picture}
+          alt={instructor.name}
+          width={150}
+          height={150}
+        />
+        <div class="name flex gap-2 items-center">
+          <h3 class="text-primary-300">{instructor.name}</h3>
+          <Link href="" variant="none">
+            <Image class="max-w-6" src={linkedinLogo} alt="Linkedin" />
+          </Link>
+        </div>
+
+        <p>{instructor.role}</p>
+      </div>
+    </section>
+    <section class="project pt-4 max-w-6xl mx-auto px-4">
+      <h2>
+        Proyecto a desarrollar: <span class="text-white">{project.name}</span>
+      </h2>
+      <ul class="list-disc pl-5">
+        {project.topics.map((item, index) => <li>{item}</li>)}
+      </ul>
+    </section>
+    <section class="instructor-detail py-24 bg-black-border my-10">
+      <div class="content max-w-6xl mx-auto px-4">
+        <h2>Conoce a <span class="text-white">{instructor.name}!</span></h2>
+        <p class="mt-4">{instructor.description}</p>
+      </div>
+    </section>
+    <section class="faqs pt-10 max-w-6xl mx-auto px-4">
+      <h2 class="my-6 text-primary-300">Preguntas frecuentes</h2>
+      {faqs?.map((item, index) => <FAQ {...item} />)}
+
+      <details>
+        <summary> ¿Por qué debería inscribirme? </summary>
+        <ul>
+          <li>El grupo de estudio es reducido (10 personas máximo).</li>
+          <li>Clases EN VIVO</li>
+          <li>Acceso a TODAS las sesiones grabadas</li>
+          <li>
+            45 minutos de ronda de preguntas al culminar CADA CLASE para que
+            aclares TODAS tus dudas
+          </li>
+          <li>PROYECTOS reales para tu PORTAFOLIO</li>
+        </ul>
+      </details>
+    </section>
+    <section
+      class="py-16 text-center grid grid-cols-1 gap-6 max-w-6xl mx-auto px-4"
+    >
+      <h3 class="leading-8">
+        Sesiones <span class="text-primary-300">EN VIVO</span> + horas extras de
+        preguntas y respuestas
+      </h3>
+      <h3 class="leading-8">
+        Aprenderás <span class="text-primary-300">HACIENDO</span>
+      </h3>
+      <h3 class="leading-8">
+        Proyectos que puedes agregar a tu <span class="text-primary-300"
+          >PORTAFOLIO</span
+        >
+      </h3>
+      <div class="action mx-auto mt-12">
+        <Link href={buyLink} variant="fill">Comprar ahora</Link>
+      </div>
+    </section>
+  </main>
+</Layout>
+<style>
+  h2 {
+    @apply text-primary-300 my-6;
+  }
+</style>

@@ -1,0 +1,21 @@
+---
+interface Props {
+  href?: string;
+  variant: "fill" | "outline" | "none";
+}
+
+const { href, variant } = Astro.props;
+
+const buttonClasses =
+  variant === "fill" ? "bg-primary-400 text-black" : "text-white";
+
+const buttonBorder = variant === "none" ? "" : "border border-light-gray";
+---
+
+<a
+  class=`block w-fit rounded-lg p-3 ${buttonBorder} ${buttonClasses}`
+  href={href}
+  target="_blank"
+>
+  <slot />
+</a>
