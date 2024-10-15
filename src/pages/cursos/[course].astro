@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import figmaLogo from "../../../public/figma.svg";
 import linkedinLogo from "../../../public/linkedin.svg";
 import calendarImage from "../../../public/calendar.svg";
+import projectImage from "../../../public/project1.png";
 import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
@@ -43,6 +44,7 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
 <Layout title=`Curso: ${title} | Coding Latam`>
   <header
     class={`bg-sky-500 bg-hero-${course} h-96 bg-cover bg-center relative flex items-center`}
+    transition:name=`media-image-${title}`
   >
     <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
     <div class="content max-w-6xl lg:mx-auto px-4 relative z-10 w-full">
@@ -50,12 +52,14 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
       <p class="max-w-2xl font-semibold text-lg mb-4">
         {description}
       </p>
-      <div class="dates flex gap-4 items-center mb-4">
+      <div class="dates flex gap-2 items-center mb-4">
         <Image class="max-w-10" src={calendarImage} alt="Calendar" />
         <p class="text-base">Inicio: {formattedDate}</p>
       </div>
 
-      <Link href={buyLink} variant="fill"> Reservar mi lugar </Link>
+      <Link target="_blank" href={buyLink} variant="fill">
+        Reservar mi lugar
+      </Link>
     </div>
   </header>
 
@@ -67,7 +71,7 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
       </ul>
     </section>
     <section
-      class="py-8 instructor md:absolute right-0 lg:right-[10%] top-0 text-center max-w-6xl mx-auto px-4 md:py-0 md:pt-16"
+      class="py-8 instructor md:absolute left-[60%] lg:right-[10%] top-0 text-center max-w-72 mx-auto px-4 md:py-0 md:pt-24"
     >
       <p class="text-base mb-6">Aprende con:</p>
       <div
@@ -82,7 +86,7 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
         />
         <div class="name flex gap-2 items-center">
           <h3 class="text-primary-300">{instructor.name}</h3>
-          <Link href={instructor.linkedin} variant="none">
+          <Link target="_blank" href={instructor.linkedin} variant="none">
             <Image class="max-w-6" src={linkedinLogo} alt="Linkedin" />
           </Link>
         </div>
@@ -91,21 +95,31 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
       </div>
     </section>
     <section class="project bg-black-border py-16">
-      <div class="content max-w-6xl mx-auto px-4">
-        <h2>
-          Proyecto a desarrollar: <span class="text-white">{project.name}</span>
-        </h2>
-        <div class="figma flex gap-2 items-center my-6">
-          <Image class="max-w-10" src={figmaLogo} alt="Figma" />
-          <a
-            target="_blank"
-            class="underline underline-offset-4"
-            href={figmaLink}>Figma del proyecto</a
-          >
+      <div
+        class="content max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <div class="left">
+          <Image src={projectImage} alt="Project" />
+          <div class="figma flex gap-2 justify-center items-center my-6">
+            <Image class="max-w-10" src={figmaLogo} alt="Figma" />
+            <a
+              target="_blank"
+              class="underline underline-offset-4"
+              href={figmaLink}>Figma del proyecto</a
+            >
+          </div>
         </div>
-        <ul class="list-disc pl-5 flex flex-col gap-4">
-          {project.topics.map((item) => <li>{item}</li>)}
-        </ul>
+        <div class="right">
+          <h2>
+            Proyecto a desarrollar: <span class="text-white"
+              >{project.name}</span
+            >
+          </h2>
+
+          <ul class="list-disc pl-5 flex flex-col gap-4">
+            {project.topics.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
       </div>
     </section>
     <section class="instructor-detail py-16 my-10">
@@ -136,7 +150,9 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
         >
       </h3>
       <div class="action mx-auto mt-12">
-        <Link href={buyLink} variant="fill">Comprar ahora</Link>
+        <Link target="_blank" href={buyLink} variant="fill"
+          >Reserva mi lugar!</Link
+        >
       </div>
     </section>
   </main>

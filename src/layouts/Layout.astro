@@ -1,7 +1,9 @@
 ---
 import "@fontsource-variable/fira-code";
+import { ViewTransitions } from "astro:transitions";
 
 import "../styles/globals.css";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
 }
@@ -18,10 +20,11 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <slot />
-  </body>
+  </body><Footer />
 </html>
 <style is:global>
   body {

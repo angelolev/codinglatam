@@ -2,9 +2,10 @@
 interface Props {
   href?: string;
   variant: "fill" | "outline" | "none";
+  target?: "_blank" | "_self";
 }
 
-const { href, variant } = Astro.props;
+const { href, variant, target = "_self" } = Astro.props;
 
 const buttonClasses =
   variant === "fill" ? "bg-primary-400 text-black" : "text-white";
@@ -15,7 +16,7 @@ const buttonBorder = variant === "none" ? "" : "p-3 border border-light-gray";
 <a
   class=`block w-fit rounded-lg ${buttonBorder} ${buttonClasses}`
   href={href}
-  target="_blank"
+  target={target}
 >
   <slot />
 </a>
