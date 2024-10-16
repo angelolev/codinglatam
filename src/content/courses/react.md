@@ -16,7 +16,7 @@ faqs:
   - question: "¿Por qué debería inscribirme?"
     answer: |
       <ul>
-        <li>El grupo de estudio es reducido (10 personas máximo).</li>
+        <li>El grupo de estudio es reducido (15 personas máximo).</li>
         <li>Clases EN VIVO</li>
         <li>Acceso a TODAS las sesiones grabadas</li>
         <li>45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
@@ -68,4 +68,7 @@ project:
     - "Agregaremos tailwind CSS para trabajar nuestros estilos"
     - "Todos nuestros avances serán versionados utilizando Git para gestionar nuestro repositorio en Github"
     - "Deployment del proyecto en Vercel"
+price:
+  regular: 90
+  discount: 75
 ---

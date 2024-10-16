@@ -31,6 +31,10 @@ const coursesCollection = defineCollection({
       name: z.string(),
       topics: z.array(z.string()),
     }),
+    price: z.object({
+      regular: z.number(),
+      discount: z.number(),
+    }),
   }),
 });
 

@@ -2,10 +2,16 @@
 title: "De 0 a la Web"
 description:
   "Aprende desde cero las tecnologías con las que podrás crear para la web."
-startDate: 2024-11-16
+startDate: 2024-11-11
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
-buyLink: "https://wa.link/suo6vt"
+buyLink: "https://wa.link/lnticu"
 faqs:
+  - question: "Si no sé nada de programación, ¿puedo participar?"
+    answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
+
+  - question: "¿Cuáles son las fechas exactas del programa?"
+    answer: "El curso comienza el 11 de noviembre. Terminamos el 16 de diciembre."
+
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
 
@@ -15,36 +21,68 @@ faqs:
   - question: "¿Por qué debería inscribirme?"
     answer: |
       <ul>
-        <li>El grupo de estudio es reducido (10 personas máximo).</li>
+        <li>El grupo de estudio es reducido (15 personas máximo).</li>
         <li>Clases EN VIVO</li>
         <li>Acceso a TODAS las sesiones grabadas</li>
         <li>45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
         <li>PROYECTOS reales para tu PORTAFOLIO</li>
       </ul>
 topics:
-  - title: "¿Qué es JSX?"
+  - title: "Introducción a la web"
 
-  - title: "Creando una aplicación con React y Vite"
+  - title: "Etiquetas HTML"
 
-  - title: "¿Qué es un componente?"
+  - title: "Atributos"
 
-  - title: "¿Cómo se comunican los componentes (props)?"
+  - title: "HTML Semántico"
 
-  - title: "CSS en React"
+  - title: "Meta Tags"
 
-  - title: "Eventos en React"
+  - title: "Imágenes y multimedia"
 
-  - title: "¿Qué es el estado (useState)?"
+  - title: "Listas"
 
-  - title: "¿Qué son los efectos (useEffect)?"
+  - title: "Navegación"
 
-  - title: "Estados de carga y error"
+  - title: "Etiquetas de texto"
 
-  - title: "Actualizando estados con useEffect"
+  - title: "Introducción a CSS"
 
-  - title: "¿Qué es React context (useContext)?"
+  - title: "Estructura básica"
 
-  - title: "Organización de archivos y carpetas"
+  - title: "Selectores"
+
+  - title: "Modelo de caja"
+
+  - title: "Especificidad"
+
+  - title: "Unidades de medida"
+
+  - title: "Tipografía"
+
+  - title: "Pseudoclases" 
+
+  - title: "Pseudoelementos"
+
+  - title: "Flexbox"
+
+  - title: "Grid"
+
+  - title: "Responsive Design"
+
+  - title: "Introducción a Git"
+
+  - title: "Comandos básicos"
+
+  - title: "Flujo de trabajo con Git"
+
+  - title: "Historial de cambios"
+
+  - title: "Trabajando con ramas"
+
+  - title: "Repositorios remotos"
+
+  - title: "Integración Git + Github"
 instructor:
   name: "Angelo Leva"
   description: |
@@ -72,4 +110,7 @@ PCs"
     - "Todos nuestros avances serán versionados utilizando Git para
 gestionar nuestro repositorio en Github"
     - "Deployment del proyecto en Vercel"
+price:
+  regular: 100
+  discount: 85
 ---

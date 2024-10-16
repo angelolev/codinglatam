@@ -17,10 +17,34 @@ import Link from "./Link.astro";
         <Image src={logoDark} alt="Coding Latam" />
       </div>
       <div class="social flex gap-4 py-4">
-        <Image src={igLogo} alt="Instagram" />
-        <Image src={youtubeLogo} alt="Youtube" />
-        <Image src={twitchLogo} alt="Twitch" />
-        <Image src={githubLogo} alt="Github" />
+        <Link
+          href="https://instagram.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={igLogo} alt="Instagram" />
+        </Link>
+        <Link
+          href="https://youtube.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={youtubeLogo} alt="Youtube" />
+        </Link>
+        <Link
+          href="https://twitch.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={twitchLogo} alt="Twitch" />
+        </Link>
+        <Link
+          href="https://github.com/coding-latam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={githubLogo} alt="Github" />
+        </Link>
       </div>
       <p>© Coding Latam 2024. Todos los derechos reservados</p>
     </div>

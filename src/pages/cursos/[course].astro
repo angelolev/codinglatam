@@ -5,6 +5,7 @@ import figmaLogo from "../../../public/figma.svg";
 import linkedinLogo from "../../../public/linkedin.svg";
 import calendarImage from "../../../public/calendar.svg";
 import projectImage from "../../../public/project1.png";
+import moneyImage from "../../../public/money.svg";
 import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
@@ -30,6 +31,7 @@ const {
   topics,
   instructor,
   project,
+  price,
 } = courseData.data;
 
 const dateObj = new Date(startDate);
@@ -66,7 +68,9 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
   <main class="relative">
     <section class="topics max-w-6xl mx-auto px-4 py-16">
       <h2>Temario</h2>
-      <ul class="list-disc pl-5 flex flex-col gap-4">
+      <ul
+        class="list-disc pl-5 grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-2xl"
+      >
         {topics?.map((item) => <li>{item.title}</li>)}
       </ul>
     </section>
@@ -122,7 +126,19 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
         </div>
       </div>
     </section>
-    <section class="instructor-detail py-16 my-10">
+    <section class="price py-16 grid grid-cols-1 justify-items-center">
+      <h2>Precio del programa</h2>
+      <Image class="w-40 lg:w-1/12" src={moneyImage} alt=" Price" />
+      <p class="mt-10 mb-2 text-2xl">Precio regular</p>
+      <h3 class="mb-8 line-through text-4xl">${price.regular}</h3>
+      <p class="mb-2 text-2xl">Precio con descuento</p>
+      <h3 class="mb-8 text-4xl">${price.discount}</h3>
+      <Link target="_blank" href={buyLink} variant="fill">
+        Aprovechar el descuento!
+      </Link>
+      <p class="mt-2 text-[14px]">Hasta 3 cuotas sin interés</p>
+    </section>
+    <section class="instructor-detail py-16 my-10 bg-black-border">
       <div class="content max-w-6xl mx-auto px-4">
         <h2>Conoce a <span class="text-white">{instructor.name}!</span></h2>
         <div
@@ -139,7 +155,7 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
         </div>
       </div>
     </section>
-    <section class="faqs py-16 bg-black-border">
+    <section class="faqs py-16">
       <div class="content max-w-6xl mx-auto px-4">
         <h2 class="my-6 text-primary-300">Preguntas frecuentes</h2>
         {faqs?.map((item) => <FAQ {...item} />)}
