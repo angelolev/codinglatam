@@ -68,12 +68,11 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos nuestro proyecto utilizando Vite + React"
-    - "Agregaremos páginas de categorías, producto y carrito de compra usando react router."
-    - "Agregaremos contexto global a nuestra aplicación"
-    - "Agregaremos tailwind CSS para trabajar nuestros estilos"
-    - "Todos nuestros avances serán versionados utilizando Git para gestionar nuestro repositorio en Github"
-    - "Deployment del proyecto en Vercel"
+    - "Desarrollo rápido con Vite + React: Aprende a configurar tu proyecto con Vite para obtener una experiencia de desarrollo increíblemente rápida y optimizada."
+    - "Crea un ecommerce completo: Implementaremos páginas de categorías, productos y carrito de compras con la potencia de React Router, brindando una experiencia de navegación fluida y eficiente."
+    - "Manejo avanzado del estado con Context API: Aprende a agregar un contexto global a tu aplicación para gestionar datos clave como el estado del carrito de compras de manera sencilla y escalable."
+    - "Estiliza tu proyecto con Tailwind CSS: Domina Tailwind CSS, el framework de estilos más popular, para crear diseños atractivos y personalizados en menos tiempo."
+    - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
   regular: 90
   discount: 75

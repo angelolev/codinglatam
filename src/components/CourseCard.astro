@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Link from "./Link.astro";
 
 const { data, slug } = Astro.props;
-const { title, description, available } = data;
+const { title, description, available, buyLink } = data;
 ---
 
 <article
@@ -31,6 +31,8 @@ const { title, description, available } = data;
     {description}
   </p>
   <div class="action pr-3 flex justify-end w-full">
-    <Link href=`/cursos/${slug}` variant="fill"> Ir al curso</Link>
+    <Link href={available ? `/cursos/${slug}` : buyLink} variant="fill"
+      >{available ? "Ir al curso" : "Notifícame"}
+    </Link>
   </div>
 </article>
