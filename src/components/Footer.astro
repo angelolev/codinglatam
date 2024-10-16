@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+import igLogo from "../../public/instagram.svg";
+import youtubeLogo from "../../public/youtube.svg";
+import twitchLogo from "../../public/twitch.svg";
+import githubLogo from "../../public/github.svg";
+import logoDark from "../../public/logo-dark.svg";
+import Link from "./Link.astro";
+---
+
+<footer class="py-12">
+  <div
+    class="content max-w-6xl mx-auto border-t border-black-border pt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 px-4 gap-6"
+  >
+    <div class="first lg:col-span-2">
+      <div class="logo">
+        <Image src={logoDark} alt="Coding Latam" />
+      </div>
+      <div class="social flex gap-4 py-4">
+        <Link
+          href="https://instagram.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={igLogo} alt="Instagram" />
+        </Link>
+        <Link
+          href="https://youtube.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={youtubeLogo} alt="Youtube" />
+        </Link>
+        <Link
+          href="https://twitch.com/codinglatam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={twitchLogo} alt="Twitch" />
+        </Link>
+        <Link
+          href="https://github.com/coding-latam"
+          target="_blank"
+          variant="none"
+        >
+          <Image src={githubLogo} alt="Github" />
+        </Link>
+      </div>
+      <p>© Coding Latam 2024. Todos los derechos reservados</p>
+    </div>
+    <div class="second">
+      <ul>
+        <li>
+          <Link href="/contacto" variant="none">Contacto</Link>
+        </li>
+        <li>
+          <Link href="/cursos" variant="none">Cursos</Link>
+        </li>
+        <li>
+          <Link href="/proyectos" variant="none">Proyectos</Link>
+        </li>
+        <li>
+          <Link href="/empleos" variant="none">Empleos</Link>
+        </li>
+      </ul>
+    </div>
+    <div class="third">
+      <ul>
+        <li>
+          <Link href="/terms" variant="none">Términos</Link>
+        </li>
+        <li>
+          <Link href="/privacy" variant="none">Privacidad</Link>
+        </li>
+        <li>
+          <Link href="/member" variant="none">Suscripciones</Link>
+        </li>
+        <li>
+          <Link
+            target="_blank"
+            href="https://angeloleva.gumroad.com/l/mentoria?layout=profile"
+            variant="none">Mentorías</Link
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

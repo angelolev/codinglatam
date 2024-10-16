@@ -1,0 +1,8 @@
+---
+const { question, answer } = Astro.props;
+---
+
+<details>
+  <summary>{question}</summary>
+  <p set:html={answer} />
+</details>

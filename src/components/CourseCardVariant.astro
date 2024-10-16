@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import reactLogo from "../../public/react.svg";
+import Link from "../components/Link.astro";
+---
+
+<article
+  class="relative rounded-lg px-6 pt-16 pb-6 md:pb-10 md:pt-18 border border-black-border text-center flex flex-wrap gap-6 justify-center my-8"
+>
+  <h3>React desde cero</h3>
+  <p>
+    Domina la biblioteca más popular para desarrollo front-end. Desarrolla
+    aplicaciones web dinámicas y de alto rendimiento.
+  </p>
+  <div
+    class="absolute -top-[50px] rounded-[50%] border-[5px] border-white-500 p-1"
+  >
+    <Image
+      class="max-w-20 right-1 bottom-1"
+      src={reactLogo}
+      alt="ReactJS logo"
+    />
+  </div>
+
+  <Link href="/cursos/react" variant="fill"> Ir al curso</Link>
+</article>

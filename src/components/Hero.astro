@@ -1,24 +1,22 @@
-<section class="hero flex flex-col gap-6 py-16 px-6 md:text-center md:py-32">
+---
+import Link from "./Link.astro";
+---
+
+<section
+  class="hero flex flex-col gap-6 md:gap-8 py-32 px-6 md:text-center md:py-80"
+>
   <h1
-    class="text-4xl text-white font-bold md:max-w-[496px] md:mx-auto md:text-5xl"
+    class="text-4xl text-white font-bold md:max-w-3xl md:mx-auto md:text-6xl lg:max-w-8xl"
   >
     Unidos por el código, <span class="text-primary-300"
-      >Juntos en cada error</span
+      >juntos en cada error</span
     >
   </h1>
-  <p class="text-light-gray text-sm lg:text-lg">
+  <p class="text-light-gray text-base md:text-xl">
     Aprende y comparte conocimiento con otros devs de la industria
   </p>
-  <div class="actions mt-8">
-    <a
-      class="bg-primary-400 rounded-lg p-3 border border-light-gray text-black"
-      target="_blank"
-      href="https://discord.com/invite/ySwYnQaveH">Únete</a
-    >
-    <a
-      class="rounded-lg p-3 border border-light-gray text-white"
-      href=""
-      target="_blank">Nosotros</a
-    >
-  </div>
+  <!-- <div class="actions mt-4 flex gap-x-4 justify-center">
+    <Link href="/cursos/react" variant="fill"> Únete</Link>
+    <Link href="/cursos/react" variant="outline"> Nosotros</Link>
+  </div> -->
 </section>

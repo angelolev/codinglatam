@@ -1,0 +1,20 @@
+---
+import Link from "./Link.astro";
+import { Image } from "astro:assets";
+import githubLogo from "../../public/github.svg";
+
+const { data } = Astro.props;
+const { title, description, repository } = data;
+---
+
+<article class="border border-black-border rounded-lg p-6">
+  <h3 class="text-primary-300 mb-4">{title}</h3>
+  <p class="mb-8 max-w-96 mx-auto">{description}</p>
+  <div class="repo flex gap-2 items-center justify-center">
+    <Image src={githubLogo} alt="Github" />
+
+    <a target="_blank" class="underline underline-offset-4" href={repository}
+      >Repositorio del proyecto</a
+    >
+  </div>
+</article>
