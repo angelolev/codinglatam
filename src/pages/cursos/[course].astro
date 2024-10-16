@@ -48,7 +48,10 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
 });
 ---
 
-<Layout title=`Curso: ${title} | Coding Latam`>
+<Layout
+  title=`Curso: ${title} | Coding Latam`
+  description="Aprende a programar haciendo proyectos reales"
+>
   <header
     class={`bg-sky-500 bg-hero-${course} h-96 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`

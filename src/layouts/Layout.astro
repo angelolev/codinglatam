@@ -5,22 +5,26 @@ import { ViewTransitions } from "astro:transitions";
 import "../styles/globals.css";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+import Opengraph from "../components/Opengraph.astro";
+import image from "../../public/og.png";
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <Opengraph title={title} description={description} image={image} />
     <ViewTransitions />
   </head>
   <body>
