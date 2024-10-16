@@ -11,7 +11,12 @@ import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
 
 export function getStaticPaths() {
-  return [{ params: { course: "react" } }, { params: { course: "web" } }];
+  return [
+    { params: { course: "react" } },
+    { params: { course: "web" } },
+    { params: { course: "javascript" } },
+    { params: { course: "astro" } },
+  ];
 }
 
 const { course } = Astro.params;

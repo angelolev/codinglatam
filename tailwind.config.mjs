@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  safelist: ["bg-sky-500", "bg-hero-react", "bg-hero-web", "mt-4"],
+  safelist: [
+    "bg-sky-500",
+    "bg-hero-react",
+    "bg-hero-web",
+    "bg-hero-javascript",
+    "bg-hero-astro",
+    "mt-4",
+  ],
   theme: {
     extend: {
       backgroundImage: {
         "hero-react": "url('/react-bg.jpg')",
         "hero-web": "url('/web-bg.jpg')",
+        "hero-astro": "url('/astro-bg.jpg')",
+        "hero-javascript": "url('/javascript-bg.jpg')",
       },
       colors: {
         primary: {

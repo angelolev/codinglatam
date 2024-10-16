@@ -1,12 +1,18 @@
 ---
 title: "De 0 a React"
-description:
-  "Domina la biblioteca más popular para desarrollo front-end. Desarrolla
-  aplicaciones web dinámicas y de alto rendimiento."
-startDate: 2024-11-16
+description: "Domina la biblioteca más popular del front-end y construye
+  aplicaciones web dinámicas."
+startDate: 2024-11-07
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/suo6vt"
+available: true
 faqs:
+  - question: "Si no sé nada de programación, ¿puedo participar?"
+    answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
+
+  - question: "¿Cuáles son las fechas exactas del programa?"
+    answer: "El curso comienza el 06 de noviembre. Terminamos el 11 de diciembre."
+
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
 

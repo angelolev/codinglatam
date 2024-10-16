@@ -3,23 +3,34 @@ import { Image } from "astro:assets";
 import Link from "./Link.astro";
 
 const { data, slug } = Astro.props;
-const { title, description } = data;
+const { title, description, available } = data;
 ---
 
 <article
-  class="flex flex-wrap gap-6 justify-center border border-black-border rounded-lg pb-6 content-between"
+  class="flex flex-wrap border border-black-border rounded-lg pb-6 content-between relative"
 >
+  {
+    !available ? (
+      <span class="w-fit bg-red-400 text-white p-1 absolute">Pronto</span>
+    ) : (
+      <span class="w-fit bg-green-400 text-white p-1 absolute">
+        Vacantes disponibles
+      </span>
+    )
+  }
   <Image
     src=`/${slug}-bg.jpg`
     alt={slug}
     width={720}
     height={720}
     style="width: 100%"
-    class="h-auto lg:h-[293px] object-cover"
+    class="h-[210px] object-cover"
   />
-  <h3>{title}</h3>
-  <p class="px-6 mb-6 lg:min-h-28">
+  <h3 class="my-2 px-3 w-full">{title}</h3>
+  <p class="px-3 my-4 lg:min-h-28 text-left mb-6">
     {description}
   </p>
-  <Link href=`/cursos/${slug}` variant="fill"> Ir al curso</Link>
+  <div class="action pr-3 flex justify-end w-full">
+    <Link href=`/cursos/${slug}` variant="fill"> Ir al curso</Link>
+  </div>
 </article>

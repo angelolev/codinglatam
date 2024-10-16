@@ -35,16 +35,19 @@ const coursesCollection = defineCollection({
       regular: z.number(),
       discount: z.number(),
     }),
+    available: z.boolean(),
   }),
 });
 
-const listCollection = defineCollection({
+const projectsCollection = defineCollection({
   schema: z.object({
-    list: z.array(z.string()),
+    title: z.string(),
+    description: z.string(),
+    repository: z.string(),
   }),
 });
 
 export const collections = {
   courses: coursesCollection,
-  list: listCollection,
+  projects: projectsCollection,
 };

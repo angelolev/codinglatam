@@ -1,5 +1,0 @@
----
-list:
-  - "react"
-  - "astro"
----

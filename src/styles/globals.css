@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  @apply text-xl leading-6 tracking-[0.4px] md:text-[28px] font-bold;
+  @apply text-xl leading-6 tracking-[0.4px] md:text-[22px] font-bold;
 }
 
 p {
