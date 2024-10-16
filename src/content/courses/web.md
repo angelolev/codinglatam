@@ -100,17 +100,11 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos la estructura HTML de una landing page de un
-ecommerce basado en el figma"
-    - "Utilizaremos HTML semántico y nuevas etiquetas disponibles"
-    - "A esta landing page le aplicaremos CSS para agregar estilos a
-nuestro ecommerce"
-    - "A la misma página, le agregaremos Responsive Design para
-que nuestra web pueda verse bien en dispositivos móviles y
-PCs"
-    - "Todos nuestros avances serán versionados utilizando Git para
-gestionar nuestro repositorio en Github"
-    - "Deployment del proyecto en Vercel"
+    - "Construcción de una estructura HTML sólida y moderna: Aprende a utilizar etiquetas semánticas y las últimas novedades de HTML para mejorar la accesibilidad y el SEO de tu sitio web."
+    - "Estiliza tu ecommerce con CSS: Domina las técnicas clave para hacer que tu tienda online luzca profesional y atractiva, con un diseño visual que cautive a tus clientes."
+    - "Optimización para todos los dispositivos: Te enseñaremos a implementar Responsive Design, asegurando que tu tienda se vea perfecta tanto en dispositivos móviles como en ordenadores."
+    - "Control total del proyecto con Git y GitHub: Mantén un historial detallado de tu progreso y gestiona tu código como un verdadero profesional, utilizando Git para la gestión del repositorio en GitHub."
+    - "Publicación rápida y sencilla: Lleva tu proyecto en vivo en cuestión de minutos con la implementación en Vercel, una de las plataformas más populares y confiables para el despliegue de proyectos web."
 price:
   regular: 100
   discount: 85
