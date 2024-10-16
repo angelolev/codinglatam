@@ -10,7 +10,7 @@ import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
 
 export function getStaticPaths() {
-  return [{ params: { course: "react" } }];
+  return [{ params: { course: "react" } }, { params: { course: "web" } }];
 }
 
 const { course } = Astro.params;
@@ -46,15 +46,15 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
     class={`bg-sky-500 bg-hero-${course} h-96 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`
   >
-    <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
+    <div class="absolute inset-0 bg-gray-800 opacity-70"></div>
     <div class="content max-w-6xl lg:mx-auto px-4 relative z-10 w-full">
       <h1 class="text-white mb-6">{title}</h1>
       <p class="max-w-2xl font-semibold text-lg mb-4">
         {description}
       </p>
-      <div class="dates flex gap-2 items-center mb-4">
+      <div class="dates flex gap-2 items-center mb-4 mt-10">
         <Image class="max-w-10" src={calendarImage} alt="Calendar" />
-        <p class="text-base">Inicio: {formattedDate}</p>
+        <p class="text-base font-bold">INICIO: {formattedDate}</p>
       </div>
 
       <Link target="_blank" href={buyLink} variant="fill">
@@ -96,20 +96,9 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
     </section>
     <section class="project bg-black-border py-16">
       <div
-        class="content max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8"
+        class="content max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8"
       >
         <div class="left">
-          <Image src={projectImage} alt="Project" />
-          <div class="figma flex gap-2 justify-center items-center my-6">
-            <Image class="max-w-10" src={figmaLogo} alt="Figma" />
-            <a
-              target="_blank"
-              class="underline underline-offset-4"
-              href={figmaLink}>Figma del proyecto</a
-            >
-          </div>
-        </div>
-        <div class="right">
           <h2>
             Proyecto a desarrollar: <span class="text-white"
               >{project.name}</span
@@ -120,12 +109,34 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
             {project.topics.map((item) => <li>{item}</li>)}
           </ul>
         </div>
+        <div class="right lg:-order-1">
+          <Image src={projectImage} alt="Project" />
+          <div class="figma flex gap-2 justify-center items-center my-6">
+            <Image class="max-w-10" src={figmaLogo} alt="Figma" />
+            <a
+              target="_blank"
+              class="underline underline-offset-4"
+              href={figmaLink}>Figma del proyecto</a
+            >
+          </div>
+        </div>
       </div>
     </section>
     <section class="instructor-detail py-16 my-10">
       <div class="content max-w-6xl mx-auto px-4">
         <h2>Conoce a <span class="text-white">{instructor.name}!</span></h2>
-        <div class="mt-4" set:html={instructor.description} />
+        <div
+          class="info flex items-center gap-8 flex-wrap justify-center md:flex-nowrap"
+        >
+          <Image
+            class="rounded-full"
+            src={instructor.picture}
+            alt={instructor.name}
+            width={150}
+            height={150}
+          />
+          <div class="mt-4" set:html={instructor.description} />
+        </div>
       </div>
     </section>
     <section class="faqs py-16 bg-black-border">

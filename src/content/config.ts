@@ -34,6 +34,13 @@ const coursesCollection = defineCollection({
   }),
 });
 
+const listCollection = defineCollection({
+  schema: z.object({
+    list: z.array(z.string()),
+  }),
+});
+
 export const collections = {
   courses: coursesCollection,
+  list: listCollection,
 };

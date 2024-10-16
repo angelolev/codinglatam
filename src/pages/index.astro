@@ -1,14 +1,23 @@
 ---
+import { getEntries, getEntry } from "astro:content";
 import CourseCard from "../components/CourseCard.astro";
-import CouseCardVariant from "../components/CouseCardVariant.astro";
 import Hero from "../components/Hero.astro";
 import JobCard from "../components/JobCard.astro";
 import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const coursesList = await getCollection("courses");
+
+if (!coursesList) {
+  throw new Error("Course not found");
+}
+
+// console.log(coursesList, "list");
 ---
 
 <Layout title="Inicio | Coding Latam">
   <Hero />
-  <section
+  <!-- <section
     class="jobs px-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto mb-8"
   >
     <h2
@@ -22,20 +31,20 @@ import Layout from "../layouts/Layout.astro";
     <JobCard />
     <JobCard />
     <JobCard />
-  </section>
-  <section class="px-6 max-w-screen-xl mx-auto mb-8 text-center">
-    <h2 class="mb-8">Explora los últimos cursos</h2>
-    <p class="mb-8">
-      Aquí encontrarás una variedad de cursos diseñados para mejorar tus
-      conocimientos, ya sea que estés dando tus primeros pasos o buscando
-      perfeccionar tus habilidades.
+  </section> -->
+  <section class="px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center">
+    <h2 class="mb-12">
+      Aprende <span class="text-primary-300">HACIENDO</span> proyectos <span
+        class="text-primary-300">REALES</span
+      >
+    </h2>
+    <p class="mb-12 max-w-4xl mx-auto">
+      Descubre cursos creados para llevar tus habilidades al siguiente nivel, ya
+      sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza hoy y
+      alcanza tus metas más rápido!
     </p>
     <div class="list grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CouseCardVariant />
+      {coursesList.map((item) => <CourseCard {...item} />)}
     </div>
   </section>
 </Layout>

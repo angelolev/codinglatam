@@ -1,8 +1,7 @@
 ---
-title: "De 0 a React"
+title: "De 0 a la Web"
 description:
-  "Domina la biblioteca más popular para desarrollo front-end. Desarrolla
-  aplicaciones web dinámicas y de alto rendimiento."
+  "Aprende desde cero las tecnologías con las que podrás crear para la web."
 startDate: 2024-11-16
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/suo6vt"
@@ -62,10 +61,15 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos nuestro proyecto utilizando Vite + React"
-    - "Agregaremos páginas de categorías, producto y carrito de compra usando react router."
-    - "Agregaremos contexto global a nuestra aplicación"
-    - "Agregaremos tailwind CSS para trabajar nuestros estilos"
-    - "Todos nuestros avances serán versionados utilizando Git para gestionar nuestro repositorio en Github"
+    - "Crearemos la estructura HTML de una landing page de un
+ecommerce basado en el figma"
+    - "Utilizaremos HTML semántico y nuevas etiquetas disponibles"
+    - "A esta landing page le aplicaremos CSS para agregar estilos a
+nuestro ecommerce"
+    - "A la misma página, le agregaremos Responsive Design para
+que nuestra web pueda verse bien en dispositivos móviles y
+PCs"
+    - "Todos nuestros avances serán versionados utilizando Git para
+gestionar nuestro repositorio en Github"
     - "Deployment del proyecto en Vercel"
 ---

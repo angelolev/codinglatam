@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import notFoundImage from "../../public/404.svg";
+import Link from "../components/Link.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 | Coding Latam">
+  <section
+    class="max-w-6xl mx-auto flex flex-wrap justify-center items-center gap-8 py-24 px-4"
+  >
+    <Image class="w-full max-w-lg" src={notFoundImage} alt="Not found" />
+
+    <p class="w-full text-center">Página no encontrada</p>
+    <Link href="/" variant="fill"> Volver al inicio </Link>
+  </section>
+</Layout>
