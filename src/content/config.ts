@@ -5,6 +5,9 @@ const coursesCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     startDate: z.date(),
+    endDate: z.date(),
+    days: z.string(),
+    schedule: z.string(),
     figmaLink: z.string(),
     buyLink: z.string(),
     faqs: z
