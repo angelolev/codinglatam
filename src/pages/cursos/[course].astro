@@ -9,6 +9,7 @@ import moneyImage from "../../../public/money.svg";
 import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
+import { formatDate } from "../../utils";
 
 export function getStaticPaths() {
   return [
@@ -30,6 +31,7 @@ const {
   title,
   description,
   startDate,
+  endDate,
   figmaLink,
   buyLink,
   faqs,
@@ -37,15 +39,9 @@ const {
   instructor,
   project,
   price,
+  schedule,
+  days,
 } = courseData.data;
-
-const dateObj = new Date(startDate);
-
-const formattedDate = dateObj.toLocaleDateString("es-PE", {
-  day: "2-digit",
-  month: "long",
-  year: "numeric",
-});
 ---
 
 <Layout
@@ -53,7 +49,7 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
   description="Aprende a programar haciendo proyectos reales"
 >
   <header
-    class={`bg-sky-500 bg-hero-${course} h-96 bg-cover bg-center relative flex items-center`}
+    class={`bg-sky-500 bg-hero-${course} h-auto py-16 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`
   >
     <div class="absolute inset-0 bg-gray-800 opacity-70"></div>
@@ -62,9 +58,21 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
       <p class="max-w-2xl font-semibold text-lg mb-4">
         {description}
       </p>
+      <ul class="list-disc pl-5">
+        <li>Grupo reducido (15 participantes)</li>
+        <li>Clases EN VIVO</li>
+        <li>Acceso a TODAS las sesiones grabadas</li>
+        <li>
+          45 minutos de ronda de preguntas al culminar CADA CLASE para que
+          aclares TODAS tus dudas
+        </li>
+        <li>PROYECTOS reales para tu PORTAFOLIO</li>
+      </ul>
       <div class="dates flex gap-2 items-center mb-4 mt-10">
         <Image class="max-w-10" src={calendarImage} alt="Calendar" />
-        <p class="text-base font-bold">INICIO: {formattedDate}</p>
+        <p class="text-base font-bold">
+          INICIO: {formatDate(startDate)}
+        </p>
       </div>
 
       <Link target="_blank" href={buyLink} variant="fill">
@@ -131,6 +139,33 @@ const formattedDate = dateObj.toLocaleDateString("es-PE", {
               href={figmaLink}>Figma del proyecto</a
             >
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="details max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-center">Detalles del curso</h2>
+      <div class="info pt-4 grid grid-cols-1 md:grid-cols-4 gap-2">
+        <div class="days mb-6 md:mb-0">
+          <h4>Días</h4>
+          <p class="text-xl">{days}</p>
+        </div>
+        <div class="dates grid grid-cols-1 gap-6">
+          <div class="startDate">
+            <h4>Inicio</h4>
+            <p class="text-xl">{formatDate(startDate)}</p>
+          </div>
+          <div class="endDate">
+            <h4>Fin</h4>
+            <p class="text-xl">{formatDate(endDate)}</p>
+          </div>
+        </div>
+        <div class="schedule mt-6 md:mt-0">
+          <h4>Horarios</h4>
+          <p class="text-xl">{schedule} 🇵🇪🇨🇴</p>
+        </div>
+        <div class="people mt-6 md:mt-0">
+          <h4>Cupos</h4>
+          <p class="text-xl">15 participantes</p>
         </div>
       </div>
     </section>

@@ -18,6 +18,10 @@ h3 {
   @apply text-xl leading-6 tracking-[0.4px] md:text-[22px] font-bold;
 }
 
+h4 {
+  @apply text-xl leading-6 font-bold mb-2;
+}
+
 p {
   @apply text-[14px] leading-6 tracking-[0.4px] md:text-base;
 }
