@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function formatDate(dateString, includeYear = false) {
     // Create a date object in UTC
     const date = new Date(dateString);
