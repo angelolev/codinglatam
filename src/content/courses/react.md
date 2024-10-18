@@ -79,4 +79,5 @@ project:
 price:
   regular: 90
   discount: 75
+demo: "https://youtu.be/8HnNCDVL7TQ"
 ---
