@@ -4,8 +4,9 @@ import { ViewTransitions } from "astro:transitions";
 
 import "../styles/globals.css";
 import Footer from "../components/Footer.astro";
-import Navbar from "../components/Navbar.astro";
 import Opengraph from "../components/Opengraph.astro";
+import Nav from "../islands/Nav";
+
 interface Props {
   title: string;
   description: string;
@@ -27,7 +28,7 @@ const { title, description } = Astro.props;
     <Opengraph title={title} description={description} image="{image}" />
   </head>
   <body>
-    <Navbar />
+    <Nav client:load />
     <slot />
     <Footer />
   </body>
