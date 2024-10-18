@@ -39,6 +39,7 @@ const coursesCollection = defineCollection({
       discount: z.number(),
     }),
     available: z.boolean(),
+    demo: z.string(),
   }),
 });
 
