@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logoDark from "../assets/logo-dark.svg";
+import logoDark from "../assets/logo.svg";
 import burguer from "../assets/burguer.svg";
 
 const Nav = () => {
@@ -13,7 +13,7 @@ const Nav = () => {
     <nav className="flex justify-between items-center px-4 py-2 w-full bg-light-black relative max-w-6xl mx-auto">
       <div className="left">
         <a href="/" className="block">
-          <img src={logoDark.src} alt="Logo" className="h-8" />
+          <img src={logoDark.src} alt="Logo" />
         </a>
       </div>
 
