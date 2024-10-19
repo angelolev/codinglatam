@@ -31,7 +31,10 @@ const { title, description, available, buyLink } = data;
     {description}
   </p>
   <div class="action pr-3 flex justify-end w-full">
-    <Link href={available ? `/cursos/${slug}` : buyLink} variant="fill"
+    <Link
+      target={available ? "_self" : "_blank"}
+      href={available ? `/cursos/${slug}` : buyLink}
+      variant="fill"
       >{available ? "Ir al curso" : "Notifícame"}
     </Link>
   </div>
