@@ -2,8 +2,8 @@
 title: "De 0 a React"
 description: "Domina la biblioteca más popular del front-end y construye
   aplicaciones web dinámicas."
-startDate: 2024-11-06
-endDate: 2024-12-11
+startDate: 2024-11-13
+endDate: 2024-12-13
 days: "Miércoles y Viernes"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
