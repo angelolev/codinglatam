@@ -27,7 +27,7 @@ const { title, description } = Astro.props;
     <ViewTransitions />
     <Opengraph title={title} description={description} image="{image}" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-light-black">
     <Nav client:load />
     <slot />
     <Footer />
