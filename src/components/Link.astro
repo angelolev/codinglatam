@@ -8,7 +8,9 @@ interface Props {
 const { href, variant, target = "_self" } = Astro.props;
 
 const buttonClasses =
-  variant === "fill" ? "bg-primary-400 text-black" : "text-white";
+  variant === "fill"
+    ? "bg-primary-400 text-black"
+    : "text-black/80 dark:text-white";
 
 const buttonBorder = variant === "none" ? "" : "p-3 border border-light-gray";
 ---
