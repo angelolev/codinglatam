@@ -57,7 +57,7 @@ const {
     <div class="absolute inset-0 bg-gray-800 opacity-70"></div>
     <div class="content max-w-6xl lg:mx-auto px-4 relative z-10 w-full">
       <h1 class="text-white mb-6">{title}</h1>
-      <p class="max-w-2xl font-semibold text-lg mb-4">
+      <p class="max-w-2xl font-semibold text-lg mb-4 text-white">
         {description}
       </p>
       <ul class="list-disc pl-5">
@@ -72,7 +72,7 @@ const {
       </ul>
       <div class="dates flex gap-2 items-center mb-4 mt-10">
         <Image class="max-w-10" src={calendarImage} alt="Calendar" />
-        <p class="text-base font-bold">
+        <p class="text-base font-bold text-white">
           INICIO: {formatDate(startDate)}
         </p>
       </div>
@@ -89,7 +89,11 @@ const {
       <ul
         class="list-disc pl-5 grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-2xl"
       >
-        {topics?.map((item) => <li>{item.title}</li>)}
+        {
+          topics?.map((item) => (
+            <li class="text-black/70 dark:text-white">{item.title}</li>
+          ))
+        }
       </ul>
     </section>
     <section

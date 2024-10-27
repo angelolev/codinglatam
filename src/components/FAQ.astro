@@ -3,6 +3,6 @@ const { question, answer } = Astro.props;
 ---
 
 <details>
-  <summary>{question}</summary>
-  <p set:html={answer} />
+  <summary class="text-black/70 dark:text-white">{question}</summary>
+  <p class="text-black/70 dark:text-white" set:html={answer} />
 </details>

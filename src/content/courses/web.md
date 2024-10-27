@@ -1,13 +1,10 @@
 ---
 title: "De 0 a la Web"
-description:
-  "Aprende desde cero las tecnologías con las que podrás crear proyectos para la web."
+description: "Aprende desde cero las tecnologías con las que podrás crear proyectos para la web."
 startDate: 2024-11-19
 endDate: 2024-12-19
-days:
-  "Martes y Jueves"
-schedule:
-  "20:00 a 22:00 (GMT-5)"
+days: "Martes y Jueves"
+schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/4rlgzv"
 available: true
@@ -66,7 +63,7 @@ topics:
 
   - title: "Tipografía"
 
-  - title: "Pseudoclases" 
+  - title: "Pseudoclases"
 
   - title: "Pseudoelementos"
 
@@ -92,13 +89,13 @@ topics:
 instructor:
   name: "Angelo Leva"
   description: |
-    <p class="mt-4">Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma.</p> 
+    <p class="mt-4 text-white">Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma.</p> 
 
-    <p class="mt-4">Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación.</p>
+    <p class="mt-4 text-white">Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación.</p>
 
-    <p class="mt-4">Trabajo como arquitecto front-end ayudando a crear aplicaciones web de alto rendimiento. Disfruto aprendiendo cosas nuevas, desarrollando actividades de equipo y soluciones creativas.</p>
+    <p class="mt-4 text-white">Trabajo como arquitecto front-end ayudando a crear aplicaciones web de alto rendimiento. Disfruto aprendiendo cosas nuevas, desarrollando actividades de equipo y soluciones creativas.</p>
 
-    <p class="mt-4">Siempre estoy ansioso por aprender nuevas tecnologías y con un interés genuino por la mejor experiencia de usuario.</p>
+    <p class="mt-4 text-white">Siempre estoy ansioso por aprender nuevas tecnologías y con un interés genuino por la mejor experiencia de usuario.</p>
   picture: "/angelo.jpeg"
   role: "Senior Frontend Developer"
   linkedin: "https://www.linkedin.com/in/angeloleva/"
