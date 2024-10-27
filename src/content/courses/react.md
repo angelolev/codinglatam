@@ -58,13 +58,13 @@ topics:
 instructor:
   name: "Angelo Leva"
   description: |
-    <p class="mt-4">Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma.</p> 
+    <p class="mt-4 text-white">Ingeniero de software apasionado por las tecnologías web y el desarrollo de aplicaciones multiplataforma.</p> 
 
-    <p class="mt-4">Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación.</p>
+    <p class="mt-4 text-white">Tengo más de 8 años de experiencia laboral en empresas de tecnología, startups locales y extranjeras. Creo contenido en redes sociales sobre programación.</p>
 
-    <p class="mt-4">Trabajo como arquitecto front-end ayudando a crear aplicaciones web de alto rendimiento. Disfruto aprendiendo cosas nuevas, desarrollando actividades de equipo y soluciones creativas.</p>
+    <p class="mt-4 text-white">Trabajo como arquitecto front-end ayudando a crear aplicaciones web de alto rendimiento. Disfruto aprendiendo cosas nuevas, desarrollando actividades de equipo y soluciones creativas.</p>
 
-    <p class="mt-4">Siempre estoy ansioso por aprender nuevas tecnologías y con un interés genuino por la mejor experiencia de usuario.</p>
+    <p class="mt-4 text-white">Siempre estoy ansioso por aprender nuevas tecnologías y con un interés genuino por la mejor experiencia de usuario.</p>
   picture: "/angelo.jpeg"
   role: "Senior Frontend Developer"
   linkedin: "https://www.linkedin.com/in/angeloleva/"

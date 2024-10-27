@@ -23,7 +23,7 @@ p {
 }
 
 details {
-  @apply p-5 border border-slate-200 rounded-lg mb-4 cursor-pointer;
+  @apply p-5 border border-black/70 dark:border-slate-200 rounded-lg mb-4 cursor-pointer;
   transition: height 0.5s ease;
   /* height: 4rem; */
 
