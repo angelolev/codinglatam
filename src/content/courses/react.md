@@ -25,11 +25,11 @@ faqs:
   - question: "¿Por qué debería inscribirme?"
     answer: |
       <ul>
-        <li>El grupo de estudio es reducido (15 personas máximo).</li>
-        <li>Clases EN VIVO</li>
-        <li>Acceso a TODAS las sesiones grabadas</li>
-        <li>45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
-        <li>PROYECTOS reales para tu PORTAFOLIO</li>
+        <li class="text-black/70 dark:text-white">El grupo de estudio es reducido (15 personas máximo).</li>
+        <li class="text-black/70 dark:text-white">Clases EN VIVO</li>
+        <li class="text-black/70 dark:text-white">Acceso a TODAS las sesiones grabadas</li>
+        <li class="text-black/70 dark:text-white">45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
+        <li class="text-black/70 dark:text-white">PROYECTOS reales para tu PORTAFOLIO</li>
       </ul>
 topics:
   - title: "¿Qué es JSX?"
