@@ -7,6 +7,8 @@ import calendarImage from "../../../public/calendar.svg";
 import projectImage from "../../../public/project1.png";
 import moneyImage from "../../../public/money.svg";
 import youtubeLogo from "../../../public/youtube-logo.svg";
+import peruFlag from "../../../public/peru.svg";
+import colombiaFlag from "../../../public/colombia.svg";
 import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
@@ -167,7 +169,11 @@ const {
         </div>
         <div class="schedule mt-6 md:mt-0">
           <h4>Horarios</h4>
-          <p class="text-xl">{schedule} 🇵🇪🇨🇴</p>
+          <p class="text-xl">{schedule}</p>
+          <div class="flex gap-2">
+            <Image class="max-w-6" src={peruFlag} alt="Peru" />
+            <Image class="max-w-6" src={colombiaFlag} alt="Colombia" />
+          </div>
         </div>
         <div class="people mt-6 md:mt-0">
           <h4>Cupos</h4>
@@ -187,13 +193,21 @@ const {
       <h2>Precio del programa</h2>
       <Image class="w-40 lg:w-1/12" src={moneyImage} alt=" Price" />
       <p class="mt-10 mb-2 text-2xl">Precio regular</p>
-      <h3 class="mb-8 line-through text-4xl">${price.regular}</h3>
+      <h3 class="mb-8 line-through text-4xl flex gap-2">
+        <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
+          price.regular * 4
+        } o ${price.regular}
+      </h3>
       <p class="mb-2 text-2xl">Precio con descuento</p>
-      <h3 class="mb-8 text-4xl">${price.discount}</h3>
+      <h3 class="mb-8 text-4xl flex gap-2">
+        <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
+          price.discount * 4
+        } o ${price.discount}
+      </h3>
       <Link target="_blank" href={buyLink} variant="fill">
         Aprovechar el descuento!
       </Link>
-      <p class="mt-2 text-[14px]">Hasta 3 cuotas sin interés</p>
+      <p class="mt-2 text-[14px]">Hasta 2 cuotas sin interés</p>
     </section>
     <section class="instructor-detail py-16 my-10 bg-black-border">
       <div class="content max-w-6xl mx-auto px-4">
