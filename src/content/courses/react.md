@@ -77,7 +77,7 @@ project:
     - "Estiliza tu proyecto con Tailwind CSS: Domina Tailwind CSS, el framework de estilos más popular, para crear diseños atractivos y personalizados en menos tiempo."
     - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
-  regular: 90
-  discount: 75
+  regular: 100
+  discount: 85
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---

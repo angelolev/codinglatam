@@ -108,7 +108,7 @@ project:
     - "Control total del proyecto con Git y GitHub: Mantén un historial detallado de tu progreso y gestiona tu código como un verdadero profesional, utilizando Git para la gestión del repositorio en GitHub."
     - "Publicación rápida y sencilla: Lleva tu proyecto en vivo en cuestión de minutos con la implementación en Vercel, una de las plataformas más populares y confiables para el despliegue de proyectos web."
 price:
-  regular: 100
-  discount: 85
+  regular: 90
+  discount: 75
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---
