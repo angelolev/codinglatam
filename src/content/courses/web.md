@@ -86,6 +86,8 @@ topics:
   - title: "Repositorios remotos"
 
   - title: "Integración Git + Github"
+
+  - title: "Introducción a Javascript"
 instructor:
   name: "Angelo Leva"
   description: |
