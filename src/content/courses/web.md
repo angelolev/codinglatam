@@ -13,7 +13,7 @@ faqs:
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
 
   - question: "¿Cuáles son las fechas exactas del programa?"
-    answer: "El curso comienza el 12 de noviembre. Terminamos el 12 de diciembre."
+    answer: "El curso comienza el 19 de noviembre. Terminamos el 19 de diciembre."
 
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
@@ -24,7 +24,7 @@ faqs:
   - question: "¿Por qué debería inscribirme?"
     answer: |
       <ul>
-        <li class="text-black/70 dark:text-white">El grupo de estudio es reducido (15 personas máximo).</li>
+        <li class="text-black/70 dark:text-white">El grupo de estudio es reducido (20 personas máximo).</li>
         <li class="text-black/70 dark:text-white">Clases EN VIVO</li>
         <li class="text-black/70 dark:text-white">Acceso a TODAS las sesiones grabadas</li>
         <li class="text-black/70 dark:text-white">45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
@@ -73,20 +73,6 @@ topics:
 
   - title: "Responsive Design"
 
-  - title: "Introducción a Git"
-
-  - title: "Comandos básicos"
-
-  - title: "Flujo de trabajo con Git"
-
-  - title: "Historial de cambios"
-
-  - title: "Trabajando con ramas"
-
-  - title: "Repositorios remotos"
-
-  - title: "Integración Git + Github"
-
   - title: "Introducción a Javascript"
 instructor:
   name: "Angelo Leva"
@@ -110,7 +96,7 @@ project:
     - "Control total del proyecto con Git y GitHub: Mantén un historial detallado de tu progreso y gestiona tu código como un verdadero profesional, utilizando Git para la gestión del repositorio en GitHub."
     - "Publicación rápida y sencilla: Lleva tu proyecto en vivo en cuestión de minutos con la implementación en Vercel, una de las plataformas más populares y confiables para el despliegue de proyectos web."
 price:
-  regular: 90
-  discount: 75
+  regular: 80
+  discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---
