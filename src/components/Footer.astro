@@ -4,8 +4,8 @@ import igLogo from "../../public/instagram.svg";
 import youtubeLogo from "../../public/youtube.svg";
 import twitchLogo from "../../public/twitch.svg";
 import githubLogo from "../../public/github.svg";
-import logoDark from "../assets/logo.svg";
 import Link from "./Link.astro";
+import Logo from "./Logo";
 ---
 
 <footer class="py-12">
@@ -14,7 +14,7 @@ import Link from "./Link.astro";
   >
     <div class="first lg:col-span-2">
       <div class="logo">
-        <Image src={logoDark} alt="Coding Latam" />
+        <Logo />
       </div>
       <div class="social flex gap-4 py-4">
         <Link
