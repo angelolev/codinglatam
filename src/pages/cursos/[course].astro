@@ -13,6 +13,7 @@ import { Image } from "astro:assets";
 import Link from "../../components/Link.astro";
 import FAQ from "../../components/FAQ.astro";
 import { formatDate } from "../../utils";
+import Countdown from "../../components/Countdown.astro";
 
 export function getStaticPaths() {
   return [
@@ -52,8 +53,13 @@ const {
   title=`Curso: ${title} | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
+  <Countdown
+    targetDate="2024-11-07T23:59:59"
+    title="La Oferta se acaba en:"
+    className="my-custom-class"
+  />
   <header
-    class={`bg-sky-500 bg-hero-${course} h-auto pt-20 pb-16 md:py-16 bg-cover bg-center relative flex items-center`}
+    class={`bg-sky-500 bg-hero-${course} h-auto pt-10 pb-16 md:py-16 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`
   >
     <div class="absolute inset-0 bg-gray-800 opacity-70"></div>
