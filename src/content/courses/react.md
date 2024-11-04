@@ -25,7 +25,7 @@ faqs:
   - question: "¿Por qué debería inscribirme?"
     answer: |
       <ul>
-        <li class="text-black/70 dark:text-white">El grupo de estudio es reducido (15 personas máximo).</li>
+        <li class="text-black/70 dark:text-white">El grupo de estudio es reducido.</li>
         <li class="text-black/70 dark:text-white">Clases EN VIVO</li>
         <li class="text-black/70 dark:text-white">Acceso a TODAS las sesiones grabadas</li>
         <li class="text-black/70 dark:text-white">45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
@@ -78,6 +78,6 @@ project:
     - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
   regular: 100
-  discount: 60
+  discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---

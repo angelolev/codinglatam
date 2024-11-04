@@ -1,4 +1,5 @@
 ---
+import Countdown from "../../components/Countdown.astro";
 import CourseCard from "../../components/CourseCard.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
@@ -14,6 +15,11 @@ if (!coursesList) {
   title=`Cursos | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
+  <Countdown
+    targetDate="2024-11-07T23:59:59"
+    title="Las Ofertas se acaban en:"
+    className="my-custom-class"
+  />
   <main>
     <section class="pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center">
       <h1 class="mb-12">
