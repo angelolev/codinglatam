@@ -3,7 +3,7 @@
 }
 
 h1 {
-  @apply text-black/80 dark:text-white text-[32px] leading-6 tracking-[0.4px] md:text-5xl font-bold;
+  @apply text-black/80 dark:text-white text-[32px] leading-8 tracking-[0.4px] md:text-5xl font-bold;
 }
 
 h2 {
