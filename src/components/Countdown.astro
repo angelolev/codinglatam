@@ -1,0 +1,81 @@
+---
+interface Props {
+  targetDate: string | Date;
+  title?: string;
+  className?: string;
+}
+
+const { targetDate, title = "Time Remaining", className = "" } = Astro.props;
+
+// Client-side script
+const script = `
+  function updateCountdown() {
+    const targetDate = new Date("${targetDate}");
+    const now = new Date();
+    const diff = targetDate.getTime() - now.getTime();
+
+    if (diff <= 0) {
+      document.querySelector('.countdown-wrapper').innerHTML = '<p>Event has ended!</p>';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+  }
+
+  // Update immediately and then every second
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+`;
+---
+
+<div
+  class:list={[
+    "bg-[#0984e3] pt-16 py-4 md:py-4 md:gap-8 text-center flex items-center justify-center gap-2 flex-wrap sticky top-0 z-40",
+    className,
+  ]}
+>
+  {title && <h2 class="text-lg text-white">{title}</h2>}
+  <div class="flex justify-center gap-4">
+    <div
+      class="flex flex-col items-center min-w[80px] p-2 bg-[#2c3e50] rounded-lg"
+    >
+      <span class="font-bold text-lg" id="days">00</span>
+      <span class="label">Días</span>
+    </div>
+    <div
+      class="flex flex-col items-center min-w[80px] p-2 bg-[#2c3e50] rounded-lg"
+    >
+      <span class="font-bold text-lg" id="hours">00</span>
+      <span class="label">Horas</span>
+    </div>
+    <div
+      class="flex flex-col items-center min-w[80px] p-2 bg-[#2c3e50] rounded-lg"
+    >
+      <span class="font-bold text-lg" id="minutes">00</span>
+      <span class="label">Mins</span>
+    </div>
+    <div
+      class="flex flex-col items-center min-w[80px] p-2 bg-[#2c3e50] rounded-lg"
+    >
+      <span class="font-bold text-lg" id="seconds">00</span>
+      <span class="label">Segs</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .label {
+    font-size: 0.875rem;
+    color: white;
+  }
+</style>
+
+<script set:html={script} />
