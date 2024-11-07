@@ -29,9 +29,9 @@ const Nav = () => {
           <path
             className=" stroke-black dark:stroke-white"
             d="M4 5H20M4 12H20M4 19H20"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
 
@@ -59,10 +59,10 @@ const Nav = () => {
           </li>
           <li>
             <a
-              href="/empleos"
+              href="/recursos"
               className="text-black/80 dark:text-white hover:underline"
             >
-              Empleos
+              Recursos
             </a>
           </li>
         </ul>
