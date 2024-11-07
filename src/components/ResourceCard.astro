@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import resourceImage from "../assets/resource.png";
+
+const { data } = Astro.props;
+const { title, description, href } = data;
+---
+
+<article class="border border-black-border rounded-lg p-4">
+  <Image class="max-w-full rounded-lg" src={resourceImage} alt={title} />
+  <h3 class="text-primary-300 my-4">
+    <a target="_blank" href={href}>{title}</a>
+  </h3>
+  <p class="mb-8">{description}</p>
+</article>
