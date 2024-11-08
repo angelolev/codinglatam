@@ -93,8 +93,7 @@ project:
     - "Construcción de una estructura HTML sólida y moderna: Aprende a utilizar etiquetas semánticas y las últimas novedades de HTML para mejorar la accesibilidad y el SEO de tu sitio web."
     - "Estiliza tu ecommerce con CSS: Domina las técnicas clave para hacer que tu tienda online luzca profesional y atractiva, con un diseño visual que cautive a tus clientes."
     - "Optimización para todos los dispositivos: Te enseñaremos a implementar Responsive Design, asegurando que tu tienda se vea perfecta tanto en dispositivos móviles como en ordenadores."
-    - "Control total del proyecto con Git y GitHub: Mantén un historial detallado de tu progreso y gestiona tu código como un verdadero profesional, utilizando Git para la gestión del repositorio en GitHub."
-    - "Publicación rápida y sencilla: Lleva tu proyecto en vivo en cuestión de minutos con la implementación en Vercel, una de las plataformas más populares y confiables para el despliegue de proyectos web."
+    - "Fundamentos de JavaScript para tu tienda online: Comienza a programar en JavaScript y entiende cómo este lenguaje potencia la interactividad en tu sitio web. Aprenderás a crear elementos dinámicos, manejar datos en tiempo real y mejorar la experiencia de usuario para tus clientes."
 price:
   regular: 80
   discount: 50
