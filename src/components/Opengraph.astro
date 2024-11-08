@@ -1,13 +1,11 @@
 ---
-const { title, description, url, image } = Astro.props;
-
-console.log(image, "img");
+const { title, description, url } = Astro.props;
 ---
 
 <head>
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <!-- <meta property="og:url" content={url} /> -->
-  <meta property="og:image" content={image.src} />
+  <meta property="og:image" content="/og.png" />
   <meta property="og:type" content="website" />
 </head>

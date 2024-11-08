@@ -6,7 +6,6 @@ import "../styles/globals.css";
 import Footer from "../components/Footer.astro";
 import Opengraph from "../components/Opengraph.astro";
 import Nav from "../islands/Nav";
-import ogImage from "../assets/og.png";
 
 interface Props {
   title: string;
@@ -26,7 +25,7 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
-    <Opengraph title={title} description={description} image={ogImage} />
+    <Opengraph title={title} description={description} />
   </head>
   <body class="bg-white dark:bg-light-black">
     <Nav client:load />
