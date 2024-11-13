@@ -5,9 +5,14 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const coursesList = await getCollection("courses");
+const bannersList = await getCollection("banners");
 
 if (!coursesList) {
   throw new Error("Course not found");
+}
+
+if (!bannersList) {
+  return;
 }
 ---
 
@@ -15,11 +20,7 @@ if (!coursesList) {
   title=`Cursos | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
-  <Countdown
-    targetDate="2024-11-11T23:59:59"
-    title="Las Ofertas se acaban en:"
-    className="my-custom-class"
-  />
+  {bannersList.map((banner) => <Countdown {...banner.data} />)}
   <main>
     <section class="pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center">
       <h1 class="mb-12">

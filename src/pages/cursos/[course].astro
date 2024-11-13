@@ -47,6 +47,8 @@ const {
   days,
   demo,
 } = courseData.data;
+
+const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
 ---
 
 <Layout
@@ -199,12 +201,12 @@ const {
       <h2>Precio del programa</h2>
       <Image class="w-40 lg:w-1/12" src={moneyImage} alt=" Price" />
       <p class="mt-10 mb-2 text-2xl">Precio regular</p>
-      <h3 class="mb-8 line-through text-4xl flex gap-2">
+      <h3 class={`mb-8 text-4xl flex gap-2 ${priceLabelStyle}`}>
         <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
           price.regular * 4
         } o ${price.regular}
       </h3>
-      <p class="mb-2 text-2xl">Precio con descuento</p>
+      {price.discount > 0 && <p class="mb-2 text-2xl">Precio con descuento</p>
       <h3 class="mb-8 text-4xl flex gap-2">
         <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
           price.discount * 4
@@ -212,7 +214,8 @@ const {
       </h3>
       <Link target="_blank" href={buyLink} variant="fill">
         Aprovechar el descuento!
-      </Link>
+      </Link>}
+      
       <p class="mt-2 text-[14px]">Hasta 2 cuotas sin interés</p>
     </section>
     <section class="instructor-detail py-16 my-10 bg-black-border">

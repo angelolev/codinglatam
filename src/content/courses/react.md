@@ -78,6 +78,6 @@ project:
     - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
   regular: 100
-  discount: 50
+  discount: 0
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---
