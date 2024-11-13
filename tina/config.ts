@@ -83,6 +83,33 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "banners",
+        label: "Banners",
+        path: "src/content/banners",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "published",
+            label: "Published",
+          },
+          {
+            label: "Target date",
+            name: "date",
+            type: "datetime",
+            ui: {
+              timeFormat: "HH:mm",
+            },
+          },
+        ],
+      },
     ],
   },
 });

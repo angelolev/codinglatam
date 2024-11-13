@@ -3,9 +3,15 @@ interface Props {
   targetDate: string | Date;
   title?: string;
   className?: string;
+  published: boolean;
 }
 
-const { targetDate, title = "Time Remaining", className = "" } = Astro.props;
+const {
+  targetDate,
+  title = "Time Remaining",
+  className = "",
+  published,
+} = Astro.props;
 
 // Client-side script
 const script = `
@@ -34,6 +40,10 @@ const script = `
   updateCountdown();
   setInterval(updateCountdown, 1000);
 `;
+
+if (!published) {
+  return;
+}
 ---
 
 <div
