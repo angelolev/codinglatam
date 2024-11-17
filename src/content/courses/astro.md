@@ -1,7 +1,7 @@
 ---
-title: "De 0 a Astro"
+title: "Next.js Desde Cero"
 description:
-  "Construye sitios web ligeros y eficientes desde cero con este framework moderno"
+  "El Curso de Next.js que todo desarrollador Frontend debería tomar"
 startDate: 2025-01-06
 endDate: 2024-12-13
 days:
@@ -10,7 +10,7 @@ schedule:
   "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/pbtved"
-available: false
+available: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
@@ -34,61 +34,39 @@ faqs:
         <li>PROYECTOS reales para tu PORTAFOLIO</li>
       </ul>
 topics:
-  - title: "Introducción a la web"
+  - title: "Introducción a Next.js"
 
-  - title: "Etiquetas HTML"
+  - title: "Instalación y configuración inicial"
 
-  - title: "Atributos"
+  - title: "Primeros pasos: Tu primera página"
 
-  - title: "HTML Semántico"
+  - title: "Sistema de enrutamiento automático"
 
-  - title: "Meta Tags"
+  - title: "Enrutamiento dinámico"
 
-  - title: "Imágenes y multimedia"
+  - title: "Uso de Link y useRouter"
 
-  - title: "Listas"
+  - title: "Renderizado Estático (SSG)"
 
-  - title: "Navegación"
+  - title: "Renderizado del Lado del Servidor (SSR)"
 
-  - title: "Etiquetas de texto"
+  - title: "Generación de Páginas Incremental (ISR)"
 
-  - title: "Introducción a CSS"
+  - title: "Integración de datos con APIs externas"
 
-  - title: "Estructura básica"
+  - title: "Creación de API Routes en Next.js"
 
-  - title: "Selectores"
+  - title: "Estilos globales y CSS en Next.js"
 
-  - title: "Modelo de caja"
+  - title: "Estilizando con Tailwind CSS"
 
-  - title: "Especificidad"
+  - title: "Optimización de imágenes con next/image"
 
-  - title: "Unidades de medida"
+  - title: "Optimización de rendimiento"
 
-  - title: "Tipografía"
+  - title: "SEO con Next.js"
 
-  - title: "Pseudoclases" 
-
-  - title: "Pseudoelementos"
-
-  - title: "Flexbox"
-
-  - title: "Grid"
-
-  - title: "Responsive Design"
-
-  - title: "Introducción a Git"
-
-  - title: "Comandos básicos"
-
-  - title: "Flujo de trabajo con Git"
-
-  - title: "Historial de cambios"
-
-  - title: "Trabajando con ramas"
-
-  - title: "Repositorios remotos"
-
-  - title: "Integración Git + Github"
+  - title: "Despliegue en Vercel" 
 instructor:
   name: "Angelo Leva"
   description: |
@@ -118,6 +96,6 @@ gestionar nuestro repositorio en Github"
     - "Deployment del proyecto en Vercel"
 price:
   regular: 100
-  discount: 85
+  discount: 0
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---

@@ -3,11 +3,11 @@ import { Image } from "astro:assets";
 import Link from "./Link.astro";
 
 const { data, slug } = Astro.props;
-const { title, description, available, buyLink } = data;
+const { title, description, available, buyLink, price } = data;
 ---
 
 <article
-  class="flex flex-wrap dark:border dark:border-black-border rounded-lg pb-6 content-between relative shadow-xl"
+  class="bg-white flex flex-wrap dark:border dark:border-black-border rounded-lg pb-6 content-between relative shadow-xl transition-transform hover:scale-[1.02]"
 >
   {
     !available ? (
@@ -28,15 +28,30 @@ const { title, description, available, buyLink } = data;
     style="width: 100%"
     class="h-[210px] object-cover"
   />
-  <h3 class="my-2 px-3 w-full">{title}</h3>
-  <p class="px-3 my-4 lg:min-h-28 text-left mb-6">
+  <h3 class="mt-6 mb-2 px-3 w-full text-black/70">{title}</h3>
+  <p class="px-3 my-4 lg:min-h-28 text-left mb-6 text-black/70">
     {description}
   </p>
-  <div class="action pr-3 flex justify-end w-full">
+  <div class="action px-3 flex items-center justify-between w-full">
+    <div class="prices">
+      {
+        price.discount > 0 && (
+          <span class="text-black/80 font-bold text-3xl">
+            ${price.regular - (price.regular * price.discount) / 100}
+          </span>
+        )
+      }
+      <span
+        class={`font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
+        >${price.regular}</span
+      >
+    </div>
+
     <Link
       target={available ? "_self" : "_blank"}
       href={available ? `/cursos/${slug}` : buyLink}
       variant="fill"
+      extraClasses="px-6"
       >{available ? "Ir al curso" : "Notifícame"}
     </Link>
   </div>
