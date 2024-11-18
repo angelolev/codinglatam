@@ -1,13 +1,10 @@
 ---
 title: "Next.js Desde Cero"
-description:
-  "El Curso de Next.js que todo desarrollador Frontend debería tomar"
+description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
 startDate: 2025-01-06
 endDate: 2024-12-13
-days:
-  "Martes y Jueves"
-schedule:
-  "20:00 a 22:00 (GMT-5)"
+days: "Martes y Jueves"
+schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/pbtved"
 available: true
@@ -66,7 +63,7 @@ topics:
 
   - title: "SEO con Next.js"
 
-  - title: "Despliegue en Vercel" 
+  - title: "Despliegue en Vercel"
 instructor:
   name: "Angelo Leva"
   description: |
@@ -83,17 +80,11 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos la estructura HTML de una landing page de un
-ecommerce basado en el figma"
-    - "Utilizaremos HTML semántico y nuevas etiquetas disponibles"
-    - "A esta landing page le aplicaremos CSS para agregar estilos a
-nuestro ecommerce"
-    - "A la misma página, le agregaremos Responsive Design para
-que nuestra web pueda verse bien en dispositivos móviles y
-PCs"
-    - "Todos nuestros avances serán versionados utilizando Git para
-gestionar nuestro repositorio en Github"
-    - "Deployment del proyecto en Vercel"
+    - "Aprende a configurar tu proyecto desde cero con Next.js para aprovechar el poder del rendering híbrido y una experiencia de desarrollo optimizada."
+    - "Implementaremos páginas dinámicas para categorías, productos y carrito de compras utilizando el enrutamiento basado en archivos de Next.js, garantizando una navegación rápida y eficiente."
+    - "Descubre cómo gestionar datos clave, como el estado del carrito de compras, utilizando Context API para mantener tu aplicación escalable y organizada."
+    - "Domina el uso de Tailwind CSS para crear diseños modernos, responsivos y personalizables sin esfuerzo."
+    - "Aprende a desplegar tu ecommerce de manera profesional en Vercel, la plataforma ideal para proyectos Next.js, asegurando rendimiento y disponibilidad."
 price:
   regular: 100
   discount: 0

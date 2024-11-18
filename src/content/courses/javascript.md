@@ -10,7 +10,7 @@ schedule:
   "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/pbtved"
-available: false
+available: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
