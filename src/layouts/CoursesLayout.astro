@@ -10,6 +10,7 @@ import sunImage from "../assets/sun.svg";
 import moonImage from "../assets/moon.svg";
 import { Image } from "astro:assets";
 import ThemeToggle from "../components/ThemeToggle";
+
 interface Props {
   title: string;
   description: string;
@@ -32,9 +33,7 @@ const { title, description } = Astro.props;
   </head>
   <body class="bg-white dark:bg-light-black">
     <Nav client:load />
-    <main class="max-w-6xl mx-auto">
-      <slot />
-    </main>
+    <slot />
     <Footer />
   </body>
 </html>

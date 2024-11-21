@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "../components/Logo";
+import ThemeToggle from "../components/ThemeToggle";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,14 +10,15 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-4 py-2 w-full bg-white dark:bg-light-black fixed z-50 md:static max-w-6xl mx-auto">
+    <nav className="flex justify-between items-center px-4 py-2 w-full bg-white dark:bg-light-black fixed z-50 md:static max-w-6xl mx-auto lg:px-0">
       <div className="left">
         <a href="/" className="block">
           <Logo />
         </a>
       </div>
 
-      <div className="right">
+      <div className="right relative">
+        <ThemeToggle />
         <svg
           className="md:hidden"
           width="24"

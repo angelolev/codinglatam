@@ -6,7 +6,9 @@ const { data } = Astro.props;
 const { title, description, href } = data;
 ---
 
-<article class="border border-black-border rounded-lg p-4">
+<article
+  class="border border-black-border/10 dark:border-black-border rounded-lg p-4 shadow-lg"
+>
   <Image class="max-w-full rounded-lg" src={resourceImage} alt={title} />
   <h3 class="text-primary-300 my-4">
     <a target="_blank" href={href}>{title}</a>

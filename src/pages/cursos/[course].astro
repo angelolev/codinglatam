@@ -1,6 +1,6 @@
 ---
 import { getEntry } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import CoursesLayout from "../../layouts/CoursesLayout.astro";
 import figmaLogo from "../../assets/figma.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
 import calendarImage from "../../assets/calendar.svg";
@@ -51,7 +51,7 @@ const {
 const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
 ---
 
-<Layout
+<CoursesLayout
   title=`Curso: ${title} | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
@@ -263,7 +263,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       </div>
     </section>
   </main>
-</Layout>
+</CoursesLayout>
 <style>
   h2 {
     @apply text-primary-300 my-6;
