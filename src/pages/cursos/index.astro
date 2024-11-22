@@ -10,10 +10,6 @@ const bannersList = await getCollection("banners");
 if (!coursesList) {
   throw new Error("Course not found");
 }
-
-if (!bannersList) {
-  return;
-}
 ---
 
 <Layout
@@ -22,7 +18,7 @@ if (!bannersList) {
 >
   {bannersList.map((banner) => <Countdown {...banner.data} />)}
   <main>
-    <section class="pt-20 px-6 lg:px-0 mx-auto mb-8 text-center">
+    <section class="pt-20 px-6 lg:px-0 max-w-6xl mx-auto mb-8 text-center">
       <h1 class="mb-12">
         Aprende <span class="text-primary-300">HACIENDO</span> proyectos <span
           class="text-primary-300">REALES</span

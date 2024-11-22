@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import PackageCard from "../../components/PackageCard.astro";
+
+const packagesList = await getCollection("blackfriday");
+
+const nextjsCourses = await getCollection("blackfriday", ({ data }) => {
+  return data.title.toLowerCase().includes("next");
+});
+
+const reactjsCourses = await getCollection("blackfriday", ({ data }) => {
+  return data.title.toLowerCase().includes("react");
+});
+
+const webCourses = await getCollection("blackfriday", ({ data }) => {
+  return data.title.toLowerCase().includes("web");
+});
+---
+
+<Layout
+  title=`Blackfriday | Coding Latam`
+  description="Ofertas de cursos de programación"
+>
+  <section
+    class="pt-20 md:pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center"
+  >
+    <h1 class="mb-12 leading-snug">
+      <span class="text-primary-300">MEGA OFERTAS</span> en cursos de programación
+    </h1>
+    <p class="mb-12 max-w-4xl mx-auto">
+      Descubre las mejores OFERTAS del año en cursos de programación y lleva tus
+      habilidades al siguiente nivel. Aprende las tecnologías más demandadas del
+      mercado con contenido de calidad, actualizado y diseñado para todos los
+      niveles, desde principiantes hasta avanzados.
+    </p>
+    <div class="category">
+      <h2 class="mb-8">
+        Ofertas en Cursos de <span class="text-primary-300">NEXT JS</span>
+      </h2>
+      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {nextjsCourses.map((item) => <PackageCard {...item} />)}
+      </div>
+    </div>
+    <div class="category mt-8">
+      <h2 class="mb-8">
+        Ofertas en Cursos de <span class="text-primary-300">REACT JS</span>
+      </h2>
+      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {reactjsCourses.map((item) => <PackageCard {...item} />)}
+      </div>
+    </div>
+    <div class="category mt-8">
+      <h2 class="mb-8">
+        Ofertas en Cursos de <span class="text-primary-300">DESARROLLO WEB</span
+        >
+      </h2>
+      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {webCourses.map((item) => <PackageCard {...item} />)}
+      </div>
+    </div>
+  </section>
+</Layout>

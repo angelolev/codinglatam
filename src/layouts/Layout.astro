@@ -30,9 +30,9 @@ const { title, description } = Astro.props;
     <ViewTransitions />
     <Opengraph title={title} description={description} />
   </head>
-  <body class="bg-white dark:bg-light-black">
+  <body class="bg-slate-100 dark:bg-light-black">
     <Nav client:load />
-    <main class="max-w-6xl mx-auto">
+    <main class="">
       <slot />
     </main>
     <Footer />

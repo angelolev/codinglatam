@@ -2,11 +2,21 @@
 import { Image } from "astro:assets";
 import Link from "./Link.astro";
 import calendarImage from "../assets/calendar.svg";
+import clockImage from "../assets/clock.svg";
 import { formatDate } from "../utils";
 
 const { data, slug } = Astro.props;
-const { title, description, available, buyLink, price, startDate, active } =
-  data;
+const {
+  title,
+  description,
+  available,
+  buyLink,
+  price,
+  startDate,
+  active,
+  schedule,
+  days,
+} = data;
 
 if (!active) {
   return;
@@ -17,16 +27,23 @@ if (!active) {
   class="bg-white flex flex-wrap dark:border dark:border-black-border rounded-lg pb-6 content-between relative shadow-xl transition-transform hover:scale-[1.02]"
 >
   {
+    price.discount > 0 && (
+      <span class="rounded-full bg-red-500 text-white absolute right-2 px-3 text-sm py-1 top-2">
+        -{price.discount}%
+      </span>
+    )
+  }
+  <!-- {
     !available ? (
       <span class="w-fit bg-red-400 text-white p-1 absolute">
         Grupo completo
       </span>
     ) : (
       <span class="w-fit bg-green-400 text-white p-1 absolute">
-        Vacantes disponibles
+        Cupos disponibles
       </span>
     )
-  }
+  } -->
   <Image
     src=`/${slug}-bg.jpg`
     alt={slug}
@@ -42,6 +59,10 @@ if (!active) {
     <Image src={calendarImage} alt="Calendar" />
     <span class="text-black/70">{formatDate(startDate)}</span>
   </div>
+  <!-- <div class="mt-4 px-6 flex items-center gap-2">
+    <Image src={clockImage} alt="Clock" />
+    <span class="text-black/70 text-left">{days} {schedule} </span>
+  </div> -->
   <p
     class="px-6 my-4 lg:min-h-28 text-left mb-6 dark:text-black/70 text-black/70 text-sm"
   >
@@ -51,8 +72,8 @@ if (!active) {
     <div class="prices">
       {
         price.discount > 0 && (
-          <span class="text-black/80 font-bold text-3xl">
-            ${price.regular - (price.regular * price.discount) / 100}
+          <span class="text-black/80 font-bold text-2xl">
+            {`$${Math.round(price.regular - (price.regular * price.discount) / 100) - 1}`}
           </span>
         )
       }
@@ -66,7 +87,7 @@ if (!active) {
       target={available ? "_self" : "_blank"}
       href={available ? `/cursos/${slug}` : buyLink}
       variant="fill"
-      extraClasses="px-6"
+      extraClasses="px-6 text-sm"
       >{available ? "Ir al curso" : "Notifícame"}
     </Link>
   </div>

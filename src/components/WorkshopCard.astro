@@ -46,7 +46,7 @@ const {
     </p>
   </div>
 
-  <div class="action px-3 flex items-center justify-between w-full">
+  <div class="action flex items-center justify-between w-full">
     <div class="prices">
       {
         price.discount > 0 && (
@@ -61,7 +61,11 @@ const {
       >
     </div>
 
-    <Link target="_blank" href={buyLink} variant="fill" extraClasses="px-6"
+    <Link
+      target="_blank"
+      href={buyLink}
+      variant="fill"
+      extraClasses="px-6 text-sm"
       >Registrarme
     </Link>
   </div>

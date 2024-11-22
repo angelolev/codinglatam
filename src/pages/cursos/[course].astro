@@ -1,5 +1,5 @@
 ---
-import { getEntry } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import CoursesLayout from "../../layouts/CoursesLayout.astro";
 import figmaLogo from "../../assets/figma.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
@@ -26,6 +26,7 @@ export function getStaticPaths() {
 
 const { course } = Astro.params;
 const courseData = await getEntry("courses", course);
+const bannersList = await getCollection("banners");
 
 if (!courseData) {
   throw new Error("Course not found");
@@ -55,11 +56,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
   title=`Curso: ${title} | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
-  <Countdown
-    targetDate="2024-11-11T23:59:59"
-    title="La Oferta se acaba en:"
-    className="my-custom-class"
-  />
+{bannersList.map((banner) => <Countdown {...banner.data} />)}
   <header
     class={`bg-sky-500 bg-hero-${course} h-auto pt-20 pb-16 md:py-16 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`
@@ -192,7 +189,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
         <Image class="max-w-16" src={youtubeLogo} alt="Clase demo" />
         <a
           target="_blank"
-          class="text-lg uppercase underline underline-offset-4"
+          class="text-lg uppercase underline underline-offset-4 text-black/70 dark:text-white"
           href={demo}>¡Mira todo lo que aprenderás en nuestras clases aquí!</a
         >
       </div>
