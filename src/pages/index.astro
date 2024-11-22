@@ -1,12 +1,12 @@
 ---
-import { getEntries, getEntry } from "astro:content";
 import CourseCard from "../components/CourseCard.astro";
 import Hero from "../components/Hero.astro";
-import JobCard from "../components/JobCard.astro";
+import WorkshopCard from "../components/WorkshopCard.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const coursesList = await getCollection("courses");
+const workshopsList = await getCollection("workshops");
 
 if (!coursesList) {
   throw new Error("Course not found");
@@ -48,6 +48,19 @@ if (!coursesList) {
       {coursesList.map((item) => <CourseCard {...item} />)}
     </div>
   </section>
-</Layout>
+  <section class="px-6 lg:px-0 mx-auto my-16 text-center">
+    <h2 class="mb-12 leading-8">
+      Talleres <span class="text-primary-300">EN VIVO </span>
+    </h2>
+    <p class="mb-12 max-w-4xl mx-auto">
+      Desarrolla tu potencial con talleres en vivo personalizados para devs.
+      Aprende en tiempo real, aplica en tus proyectos y destaca
+      profesionalmente.
+    </p>
+    <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {workshopsList.map((item) => <WorkshopCard {...item} />)}
+    </div>
+  </section>
 
-<style></style>
+  <style></style>
+</Layout>

@@ -1,9 +1,16 @@
 ---
 import { Image } from "astro:assets";
 import Link from "./Link.astro";
+import calendarImage from "../assets/calendar.svg";
+import { formatDate } from "../utils";
 
 const { data, slug } = Astro.props;
-const { title, description, available, buyLink, price } = data;
+const { title, description, available, buyLink, price, startDate, active } =
+  data;
+
+if (!active) {
+  return;
+}
 ---
 
 <article
@@ -31,12 +38,16 @@ const { title, description, available, buyLink, price } = data;
   <h3 class="mt-6 mb-2 px-3 w-full dark:text-black/70 text-black/70">
     {title}
   </h3>
+  <div class="mt-4 px-6 flex items-center gap-2">
+    <Image src={calendarImage} alt="Calendar" />
+    <span class="text-black/70">{formatDate(startDate)}</span>
+  </div>
   <p
-    class="px-3 my-4 lg:min-h-28 text-left mb-6 dark:text-black/70 text-black/70"
+    class="px-6 my-4 lg:min-h-28 text-left mb-6 dark:text-black/70 text-black/70 text-sm"
   >
     {description}
   </p>
-  <div class="action px-3 flex items-center justify-between w-full">
+  <div class="action px-6 flex items-center justify-between w-full">
     <div class="prices">
       {
         price.discount > 0 && (

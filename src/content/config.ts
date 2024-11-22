@@ -2,6 +2,7 @@ import { defineCollection, z } from "astro:content";
 
 const coursesCollection = defineCollection({
   schema: z.object({
+    active: z.boolean(),
     title: z.string(),
     description: z.string(),
     startDate: z.date(),

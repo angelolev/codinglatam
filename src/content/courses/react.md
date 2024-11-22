@@ -2,13 +2,14 @@
 title: "De 0 a React"
 description: "Domina la biblioteca más popular del front-end y construye
   aplicaciones web dinámicas."
-startDate: 2024-11-13
+startDate: 2025-02-04
 endDate: 2024-12-13
 days: "Miércoles y Viernes"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/mjk0b3"
 available: true
+active: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
@@ -78,6 +79,6 @@ project:
     - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
   regular: 100
-  discount: 0
+  discount: 40
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---

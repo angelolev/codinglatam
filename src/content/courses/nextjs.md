@@ -1,13 +1,14 @@
 ---
 title: "Next.js Desde Cero"
 description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
-startDate: 2025-01-06
+startDate: 2025-01-07
 endDate: 2024-12-13
 days: "Martes y Jueves"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/pbtved"
 available: true
+active: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
@@ -87,6 +88,6 @@ project:
     - "Aprende a desplegar tu ecommerce de manera profesional en Vercel, la plataforma ideal para proyectos Next.js, asegurando rendimiento y disponibilidad."
 price:
   regular: 100
-  discount: 0
+  discount: 40
 demo: "https://youtu.be/8HnNCDVL7TQ"
 ---
