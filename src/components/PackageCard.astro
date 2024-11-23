@@ -30,10 +30,7 @@ const { title, description, price, startDate, gifts, buyLink } = data;
       {
         price.discount > 0 && (
           <span class="text-black/80 font-bold text-3xl">
-            $
-            {Math.round(
-              price.regular - (price.regular * price.discount) / 100
-            ) - 1}
+            {`$${Math.round(price.regular - (price.regular * price.discount) / 100) - 1}`}
           </span>
         )
       }
