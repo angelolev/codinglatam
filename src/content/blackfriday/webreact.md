@@ -1,7 +1,7 @@
 ---
-title: "React + las Bases del Frontend"
-description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
-startDate: 2025-01-07
+title: "Frontends Pack: Aprende React y las Bases del Desarrollo Web"
+description: "Conecta los fundamentos del frontend con el poder de React JS para crear aplicaciones web desde cero."
+startDate: 2025-02-05
 buyLink: "https://wa.link/4rlgzv"
 price:
   regular: 149

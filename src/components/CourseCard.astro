@@ -16,6 +16,7 @@ const {
   active,
   schedule,
   days,
+  isLive,
 } = data;
 
 if (!active) {
@@ -33,17 +34,13 @@ if (!active) {
       </span>
     )
   }
-  <!-- {
-    !available ? (
-      <span class="w-fit bg-red-400 text-white p-1 absolute">
-        Grupo completo
-      </span>
-    ) : (
-      <span class="w-fit bg-green-400 text-white p-1 absolute">
-        Cupos disponibles
+  {
+    !isLive ? null : (
+      <span class="w-fit bg-green-400 text-white px-2 py-1 absolute bottom-20">
+        Clases EN VIVO
       </span>
     )
-  } -->
+  }
   <Image
     src=`/${slug}-bg.jpg`
     alt={slug}

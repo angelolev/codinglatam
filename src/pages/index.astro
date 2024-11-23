@@ -1,4 +1,5 @@
 ---
+import Countdown from "../components/Countdown.astro";
 import CourseCard from "../components/CourseCard.astro";
 import Hero from "../components/Hero.astro";
 import WorkshopCard from "../components/WorkshopCard.astro";
@@ -7,6 +8,7 @@ import { getCollection } from "astro:content";
 
 const coursesList = await getCollection("courses");
 const workshopsList = await getCollection("workshops");
+const bannersList = await getCollection("banners");
 
 if (!coursesList) {
   throw new Error("Course not found");
@@ -17,6 +19,7 @@ if (!coursesList) {
   title="Inicio | Coding Latam"
   description="Aprende a programar haciendo proyectos reales"
 >
+  {bannersList.map((banner) => <Countdown {...banner.data} />)}
   <Hero />
   <!-- <section
     class="jobs px-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto mb-8"
@@ -39,7 +42,7 @@ if (!coursesList) {
         class="text-primary-300">REALES</span
       >
     </h2>
-    <p class="mb-12 max-w-4xl mx-auto">
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
       Descubre cursos creados para llevar tus habilidades al siguiente nivel, ya
       sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza hoy y
       alcanza tus metas más rápido!
@@ -52,7 +55,7 @@ if (!coursesList) {
     <h2 class="mb-12 leading-8">
       Workshops <span class="text-primary-300">EN VIVO </span>
     </h2>
-    <p class="mb-12 max-w-4xl mx-auto">
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
       Desarrolla tu potencial con talleres en vivo personalizados para devs.
       Aprende en tiempo real, aplica en tus proyectos y destaca
       profesionalmente.

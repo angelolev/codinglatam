@@ -1,6 +1,6 @@
 ---
-title: "Next.js Desde Cero - Starter"
-description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
+title: "Next JS Desde Cero - Starter Pack"
+description: "Domina los fundamentos de Next.js desde cero y aprende a crear aplicaciones web rápidas, modernas y escalables."
 startDate: 2025-01-07
 buyLink: "https://wa.link/4rlgzv"
 price:

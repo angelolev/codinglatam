@@ -73,4 +73,5 @@ price:
   regular: 79
   discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
+isLive: false
 ---

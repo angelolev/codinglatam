@@ -51,12 +51,12 @@ const { title, description, price, startDate, gifts, buyLink } = data;
       >Registrarme
     </Link>
   </div>
-  <div class="gifts w-full mt-6 grid grid-cols-1 gap-2 items-start">
+  <div class="gifts w-full mt-6 grid grid-cols-1 gap-4 items-start">
     {
       gifts.map((item) => (
         <div class="flex gap-4 items-start">
           <Image src={giftImage} alt="Gifts" />
-          <p class="text-black/70 dark:text-black/70 text-xs font-semibold">
+          <p class="text-black/70 dark:text-black/70 text-xs font-medium">
             {item.title}
           </p>
         </div>

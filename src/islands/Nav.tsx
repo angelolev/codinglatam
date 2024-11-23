@@ -45,6 +45,14 @@ const Nav = () => {
         >
           <li>
             <a
+              href="/blackfriday"
+              className="text-black/80 dark:text-white hover:underline"
+            >
+              BLACKFRIDAY
+            </a>
+          </li>
+          <li>
+            <a
               href="/cursos"
               className="text-black/80 dark:text-white hover:underline"
             >

@@ -41,6 +41,7 @@ const coursesCollection = defineCollection({
     }),
     available: z.boolean(),
     demo: z.string(),
+    isLive: z.boolean(),
   }),
 });
 

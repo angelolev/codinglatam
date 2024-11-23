@@ -14,7 +14,7 @@ const reactjsCourses = await getCollection("blackfriday", ({ data }) => {
 });
 
 const webCourses = await getCollection("blackfriday", ({ data }) => {
-  return data.title.toLowerCase().includes("web");
+  return data.title.toLowerCase().includes("frontend");
 });
 ---
 
@@ -28,30 +28,30 @@ const webCourses = await getCollection("blackfriday", ({ data }) => {
     <h1 class="mb-12 leading-snug">
       <span class="text-primary-300">MEGA OFERTAS</span> en cursos de programación
     </h1>
-    <p class="mb-12 max-w-4xl mx-auto">
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
       Descubre las mejores OFERTAS del año en cursos de programación y lleva tus
       habilidades al siguiente nivel. Aprende las tecnologías más demandadas del
       mercado con contenido de calidad, actualizado y diseñado para todos los
       niveles, desde principiantes hasta avanzados.
     </p>
     <div class="category">
-      <h2 class="mb-8">
+      <h2 class="mb-12">
         Ofertas en Cursos de <span class="text-primary-300">NEXT JS</span>
       </h2>
       <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {nextjsCourses.map((item) => <PackageCard {...item} />)}
       </div>
     </div>
-    <div class="category mt-8">
-      <h2 class="mb-8">
+    <div class="category mt-12">
+      <h2 class="mb-12">
         Ofertas en Cursos de <span class="text-primary-300">REACT JS</span>
       </h2>
       <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {reactjsCourses.map((item) => <PackageCard {...item} />)}
       </div>
     </div>
-    <div class="category mt-8">
-      <h2 class="mb-8">
+    <div class="category mt-12">
+      <h2 class="mb-12">
         Ofertas en Cursos de <span class="text-primary-300">DESARROLLO WEB</span
         >
       </h2>

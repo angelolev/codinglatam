@@ -1,7 +1,7 @@
 ---
-title: "El Camino del Frontend: HTML, CSS, JavaScript, React y Next.js"
-description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
-startDate: 2025-01-07
+title: "El Camino del Frontend: HTML, CSS, JavaScript, React JS y Next JS"
+description: "Aprende paso a paso las herramientas esenciales para crear aplicaciones modernas y profesionales."
+startDate: 2025-02-05
 buyLink: "https://wa.link/4rlgzv"
 price:
   regular: 249
