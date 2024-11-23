@@ -2,7 +2,7 @@
 title: "Frontends Pack: Aprende React y las Bases del Desarrollo Web"
 description: "Conecta los fundamentos del frontend con el poder de React JS para crear aplicaciones web desde cero."
 startDate: 2025-02-05
-buyLink: "https://wa.link/4rlgzv"
+buyLink: "https://wa.link/3g6ixj"
 price:
   regular: 149
   discount: 33

@@ -2,7 +2,7 @@
 title: "Next JS Desde Cero - Starter Pack"
 description: "Domina los fundamentos de Next.js desde cero y aprende a crear aplicaciones web rápidas, modernas y escalables."
 startDate: 2025-01-07
-buyLink: "https://wa.link/4rlgzv"
+buyLink: "https://wa.link/m2bn6s"
 price:
   regular: 99
   discount: 39

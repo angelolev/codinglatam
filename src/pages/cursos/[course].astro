@@ -167,10 +167,6 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
             <h4>Inicio</h4>
             <p class="text-xl">{formatDate(startDate)}</p>
           </div>
-          <div class="endDate">
-            <h4>Fin</h4>
-            <p class="text-xl">{formatDate(endDate)}</p>
-          </div>
         </div>
         <div class="schedule mt-6 md:mt-0">
           <h4>Horarios</h4>
@@ -182,7 +178,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
         </div>
         <div class="people mt-6 md:mt-0">
           <h4>Cupos</h4>
-          <p class="text-xl">15 participantes</p>
+          <p class="text-xl">20 participantes</p>
         </div>
       </div>
       <div class="demo flex gap-2 items-center justify-center">
@@ -207,7 +203,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       <h3 class="mb-8 text-4xl flex gap-2">
         <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
           price.discount * 4
-        } o ${price.discount}
+        } o ${price.discount - 1}
       </h3>
       <Link target="_blank" href={buyLink} variant="fill">
         Aprovechar el descuento!

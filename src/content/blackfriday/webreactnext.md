@@ -2,7 +2,7 @@
 title: "El Camino del Frontend: HTML, CSS, JavaScript, React JS y Next JS"
 description: "Aprende paso a paso las herramientas esenciales para crear aplicaciones modernas y profesionales."
 startDate: 2025-02-05
-buyLink: "https://wa.link/4rlgzv"
+buyLink: "https://wa.link/asj2vq"
 price:
   regular: 249
   discount: 20

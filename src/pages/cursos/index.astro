@@ -17,21 +17,19 @@ if (!coursesList) {
   description="Aprende a programar haciendo proyectos reales"
 >
   {bannersList.map((banner) => <Countdown {...banner.data} />)}
-  <main>
-    <section class="pt-20 px-6 lg:px-0 max-w-6xl mx-auto mb-8 text-center">
-      <h1 class="mb-12">
-        Aprende <span class="text-primary-300">HACIENDO</span> proyectos <span
-          class="text-primary-300">REALES</span
-        >
-      </h1>
-      <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
-        Descubre cursos creados para llevar tus habilidades al siguiente nivel,
-        ya sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza
-        hoy y alcanza tus metas más rápido!
-      </p>
-      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {coursesList.map((item) => <CourseCard {...item} />)}
-      </div>
-    </section>
-  </main>
+  <section class="pt-20 px-6 lg:px-0 max-w-6xl mx-auto mb-8 text-center">
+    <h1 class="mb-12">
+      Aprende <span class="text-primary-300">HACIENDO</span> proyectos <span
+        class="text-primary-300">REALES</span
+      >
+    </h1>
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
+      Descubre cursos creados para llevar tus habilidades al siguiente nivel, ya
+      sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza hoy y
+      alcanza tus metas más rápido!
+    </p>
+    <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {coursesList.map((item) => <CourseCard {...item} />)}
+    </div>
+  </section>
 </Layout>

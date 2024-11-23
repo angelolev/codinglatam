@@ -2,7 +2,7 @@
 title: "Next JS Desde Cero - Profesional Pack"
 description: "Domina los fundamentos de Next.js desde cero y aprende a crear aplicaciones web rápidas, modernas y escalables."
 startDate: 2025-01-07
-buyLink: "https://wa.link/4rlgzv"
+buyLink: "https://wa.link/ncc60x"
 price:
   regular: 199
   discount: 50

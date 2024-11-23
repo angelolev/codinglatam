@@ -6,7 +6,7 @@ endDate: 2024-12-13
 days: "Martes y Jueves"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
-buyLink: "https://wa.link/pbtved"
+buyLink: "https://wa.link/m2bn6s"
 available: true
 active: true
 faqs:
