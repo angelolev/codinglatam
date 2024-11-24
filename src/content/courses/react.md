@@ -2,19 +2,17 @@
 title: "De 0 a React"
 description: "Domina la biblioteca más popular del front-end y construye
   aplicaciones web dinámicas."
-startDate: 2024-11-13
+startDate: 2025-02-04
 endDate: 2024-12-13
 days: "Miércoles y Viernes"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/mjk0b3"
-available: false
+available: true
+active: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
-    answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
-
-  - question: "¿Cuáles son las fechas exactas del programa?"
-    answer: "El curso comienza el 13 de noviembre. Terminamos el 13 de diciembre."
+    answer: "Si puedes pero la recomendación que te damos es que tengas experiencia previa trabajando en proyectos web y por lo menos la base de Javascript."
 
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
@@ -77,7 +75,8 @@ project:
     - "Estiliza tu proyecto con Tailwind CSS: Domina Tailwind CSS, el framework de estilos más popular, para crear diseños atractivos y personalizados en menos tiempo."
     - "Despliegue instantáneo en Vercel: Lanza tu ecommerce al mundo en cuestión de minutos gracias al deployment en Vercel, una plataforma rápida y confiable para aplicaciones React."
 price:
-  regular: 100
-  discount: 0
+  regular: 99
+  discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
+isLive: true
 ---

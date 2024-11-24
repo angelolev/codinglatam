@@ -1,6 +1,6 @@
 ---
-import { getEntry } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import { getCollection, getEntry } from "astro:content";
+import CoursesLayout from "../../layouts/CoursesLayout.astro";
 import figmaLogo from "../../assets/figma.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
 import calendarImage from "../../assets/calendar.svg";
@@ -20,12 +20,13 @@ export function getStaticPaths() {
     { params: { course: "react" } },
     { params: { course: "web" } },
     { params: { course: "javascript" } },
-    { params: { course: "astro" } },
+    { params: { course: "nextjs" } },
   ];
 }
 
 const { course } = Astro.params;
 const courseData = await getEntry("courses", course);
+const bannersList = await getCollection("banners");
 
 if (!courseData) {
   throw new Error("Course not found");
@@ -51,15 +52,11 @@ const {
 const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
 ---
 
-<Layout
+<CoursesLayout
   title=`Curso: ${title} | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
-  <Countdown
-    targetDate="2024-11-11T23:59:59"
-    title="La Oferta se acaba en:"
-    className="my-custom-class"
-  />
+{bannersList.map((banner) => <Countdown {...banner.data} />)}
   <header
     class={`bg-sky-500 bg-hero-${course} h-auto pt-20 pb-16 md:py-16 bg-cover bg-center relative flex items-center`}
     transition:name=`media-image-${title}`
@@ -97,7 +94,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
     <section class="topics max-w-6xl mx-auto px-4 py-16">
       <h2>Temario</h2>
       <ul
-        class="list-disc pl-5 grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-2xl"
+        class="list-disc pl-5 grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-8 max-w-2xl"
       >
         {
           topics?.map((item) => (
@@ -170,10 +167,6 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
             <h4>Inicio</h4>
             <p class="text-xl">{formatDate(startDate)}</p>
           </div>
-          <div class="endDate">
-            <h4>Fin</h4>
-            <p class="text-xl">{formatDate(endDate)}</p>
-          </div>
         </div>
         <div class="schedule mt-6 md:mt-0">
           <h4>Horarios</h4>
@@ -185,14 +178,14 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
         </div>
         <div class="people mt-6 md:mt-0">
           <h4>Cupos</h4>
-          <p class="text-xl">15 participantes</p>
+          <p class="text-xl">20 participantes</p>
         </div>
       </div>
       <div class="demo flex gap-2 items-center justify-center">
         <Image class="max-w-16" src={youtubeLogo} alt="Clase demo" />
         <a
           target="_blank"
-          class="text-lg uppercase underline underline-offset-4"
+          class="text-lg uppercase underline underline-offset-4 text-black/70 dark:text-white"
           href={demo}>¡Mira todo lo que aprenderás en nuestras clases aquí!</a
         >
       </div>
@@ -210,13 +203,13 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       <h3 class="mb-8 text-4xl flex gap-2">
         <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
           price.discount * 4
-        } o ${price.discount}
+        } o ${price.discount - 1}
       </h3>
       <Link target="_blank" href={buyLink} variant="fill">
         Aprovechar el descuento!
       </Link>}
       
-      <p class="mt-2 text-[14px]">Hasta 2 cuotas sin interés</p>
+      <!-- <p class="mt-2 text-[14px]">Hasta 2 cuotas sin interés</p> -->
     </section>
     <section class="instructor-detail py-16 my-10 bg-black-border">
       <div class="content max-w-6xl mx-auto px-4">
@@ -263,7 +256,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       </div>
     </section>
   </main>
-</Layout>
+</CoursesLayout>
 <style>
   h2 {
     @apply text-primary-300 my-6;
