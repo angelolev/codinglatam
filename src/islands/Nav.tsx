@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-4 py-2 w-full bg-slate-100 dark:bg-light-black fixed z-50 md:static max-w-6xl mx-auto lg:px-0">
+    <nav className="flex justify-between items-center px-4 pt-2 pb-4 md:py-2 w-full bg-slate-100 dark:bg-light-black fixed z-50 md:static max-w-6xl mx-auto lg:px-0">
       <div className="left">
         <a href="/" className="block">
           <Logo />
@@ -46,7 +46,7 @@ const Nav = () => {
           <li>
             <a
               href="/blackfriday"
-              className="text-black/80 dark:text-white hover:underline"
+              className="text-black/80 font-semibold text-2xl md:text-base dark:text-white hover:underline"
             >
               BLACKFRIDAY
             </a>
@@ -54,7 +54,7 @@ const Nav = () => {
           <li>
             <a
               href="/cursos"
-              className="text-black/80 dark:text-white hover:underline"
+              className="text-black/80 font-semibold text-2xl md:text-base dark:text-white hover:underline"
             >
               Cursos
             </a>
@@ -62,7 +62,7 @@ const Nav = () => {
           <li>
             <a
               href="/proyectos"
-              className="text-black/80 dark:text-white hover:underline"
+              className="text-black/80 font-semibold text-2xl md:text-base dark:text-white hover:underline"
             >
               Proyectos
             </a>
@@ -70,7 +70,7 @@ const Nav = () => {
           <li>
             <a
               href="/recursos"
-              className="text-black/80 dark:text-white hover:underline"
+              className="text-black/80 font-semibold text-2xl md:text-base dark:text-white hover:underline"
             >
               Recursos
             </a>

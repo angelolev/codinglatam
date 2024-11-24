@@ -9,7 +9,7 @@ description: |
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/web">Curso de cero a la Web</a></li>
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/react">Curso de cero a React</a></li>
   </ul>
-startDate: 2025-02-05
+startDate: 2025-02-04
 buyLink: "https://wa.link/3g6ixj"
 price:
   regular: 149
