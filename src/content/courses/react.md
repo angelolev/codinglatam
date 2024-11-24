@@ -2,7 +2,7 @@
 title: "De 0 a React"
 description: "Domina la biblioteca más popular del front-end y construye
   aplicaciones web dinámicas."
-startDate: 2025-02-04
+startDate: 2025-02-05
 endDate: 2024-12-13
 days: "Miércoles y Viernes"
 schedule: "20:00 a 22:00 (GMT-5)"

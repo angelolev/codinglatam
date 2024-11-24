@@ -53,18 +53,21 @@ interface IGift {
       >Registrarme
     </Link>
   </div>
-  <div class="gifts w-full mt-6 grid grid-cols-1 gap-4 items-start">
-    {
-      gifts.map((item: IGift) => (
-        <div class="flex gap-4 items-start">
-          <Image src={giftImage} alt="Gifts" />
-          <p class="text-black/70 dark:text-black/70 text-xs font-medium">
-            {item.title}
-          </p>
-        </div>
-      ))
-    }
-  </div>
+  {
+    gifts && (
+      <div class="gifts w-full mt-6 grid grid-cols-1 gap-4 items-start">
+        {gifts.map((item: IGift) => (
+          <div class="flex gap-4 items-start">
+            <Image src={giftImage} alt="Gifts" />
+            <p class="text-black/70 dark:text-black/70 text-xs font-medium">
+              {item.title}
+            </p>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
   <p
     class="left-1/2 transform -translate-x-1/2 mt-4 text-center text-base text-primary-400 dark:text-primary-400 absolute bottom-4 font-semibold"
   >
