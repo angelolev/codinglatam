@@ -13,9 +13,6 @@ faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
 
-  - question: "¿Cuáles son las fechas exactas del programa?"
-    answer: "El curso comienza el 19 de noviembre. Terminamos el 19 de diciembre."
-
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
 

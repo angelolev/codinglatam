@@ -8,4 +8,5 @@ price:
   regular: 30
   discount: 50
 gift: "Repositorio de preguntas típicas de una entrevista frontend"
+buyLink: "https://wa.link/0jhnve"
 ---

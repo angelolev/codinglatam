@@ -14,7 +14,7 @@ interface IGift {
 ---
 
 <article
-  class="bg-white dark:border dark:border-black-border rounded-lg pb-6 content-between relative shadow-xl transition-transform hover:scale-[1.02] px-6 text-left"
+  class="bg-white dark:border dark:border-black-border rounded-lg pb-24 content-between relative shadow-xl transition-transform hover:scale-[1.02] px-6 text-left"
 >
   <h3 class="mt-6 mb-2 md:min-h-20 w-full dark:text-black/70 text-black/70">
     {title}
@@ -24,9 +24,10 @@ interface IGift {
       <Image src={calendarImage} alt="Calendar" />
       <span class="text-black/70">{formatDate(startDate)}</span>
     </div>
-    <p class="my-4 text-left mb-6 dark:text-black/70 text-black/70 text-sm">
+    <!-- <p class="my-4 text-left mb-6 dark:text-black/70 text-black/70 text-sm">
       {description}
-    </p>
+    </p> -->
+    <div class="my-4" set:html={description} />
   </div>
 
   <div class="action flex items-center justify-between w-full">
@@ -64,4 +65,9 @@ interface IGift {
       ))
     }
   </div>
+  <p
+    class="left-1/2 transform -translate-x-1/2 mt-4 text-center text-base text-primary-400 dark:text-primary-400 absolute bottom-4 font-semibold"
+  >
+    Hasta 3 cuotas sin interés
+  </p>
 </article>
