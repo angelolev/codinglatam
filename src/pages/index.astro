@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Countdown from "../components/Countdown.astro";
 import CourseCard from "../components/CourseCard.astro";
 import Hero from "../components/Hero.astro";
 import WorkshopCard from "../components/WorkshopCard.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import blackfridayBanner from "../assets/blackfriday.png";
 
 const coursesList = await getCollection("courses");
 const workshopsList = await getCollection("workshops");
@@ -20,6 +22,12 @@ if (!coursesList) {
   description="Aprende a programar haciendo proyectos reales"
 >
   {bannersList.map((banner) => <Countdown {...banner.data} />)}
+  <section class="max-w-full mx-auto">
+    <a href="/blackfriday">
+      <Image src={blackfridayBanner} alt="Black friday" />
+    </a>
+  </section>
+
   <Hero />
   <!-- <section
     class="jobs px-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto mb-8"
