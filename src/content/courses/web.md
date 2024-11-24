@@ -1,7 +1,7 @@
 ---
 title: "De 0 a la Web"
 description: "Aprende desde cero las tecnologías con las que podrás crear proyectos para la web."
-startDate: 2024-03-04
+startDate: 2024-02-04
 endDate: 2024-12-19
 days: "Martes y Jueves"
 schedule: "20:00 a 22:00 (GMT-5)"

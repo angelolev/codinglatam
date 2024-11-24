@@ -9,7 +9,7 @@ days:
 schedule:
   "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
-buyLink: "https://wa.link/pbtved"
+buyLink: "https://wa.link/0cynxu"
 available: true
 active: true
 faqs:
@@ -20,28 +20,19 @@ faqs:
     answer: "Sí, un certificado digital será enviado al culminar el curso"
 
   - question: "¿Cómo se realizan las clases?"
-    answer: "Se realizan en un ambiente virtual por medio de Google Meet. Para tener la mejor experiencia deberías asistir a los eventos en vivo ya que serán interactivos. De todas maneras, las clases serán grabadas y enviadas el día después de cada clase."
-
-  - question: "¿Por qué debería inscribirme?"
-    answer: |
-      <ul>
-        <li>El grupo de estudio es reducido (15 personas máximo).</li>
-        <li>Clases EN VIVO</li>
-        <li>Acceso a TODAS las sesiones grabadas</li>
-        <li>45 minutos de ronda de preguntas al culminar CADA CLASE para que aclares TODAS tus dudas</li>
-        <li>PROYECTOS reales para tu PORTAFOLIO</li>
-      </ul>
+    answer: "Las clases de este curso serán pre grabadas y tendrás acceso a ellas por 1 año."
 topics:
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
+  - title: "Introducción a JavaScript"
+  - title: "Variables y Tipos de Datos"
+  - title: "Operadores y Control de Flujo"
+  - title: "Operadores básicos"
+  - title: "Estructuras de control"
+  - title: "Funciones"
+  - title: "Arrays"
+  - title: "Objetos"
+  - title: "Manipulación del DOM"
+  - title: "Eventos"
+  - title: "Asincronía"
 instructor:
   name: "Angelo Leva"
   description: |
@@ -58,17 +49,14 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos la estructura HTML de una landing page de un
-ecommerce basado en el figma"
-    - "Utilizaremos HTML semántico y nuevas etiquetas disponibles"
-    - "A esta landing page le aplicaremos CSS para agregar estilos a
-nuestro ecommerce"
-    - "A la misma página, le agregaremos Responsive Design para
-que nuestra web pueda verse bien en dispositivos móviles y
-PCs"
+    - "Crearemos la funcionalidad básica de un ecommerce utilizando JavaScript vanilla"
+    - "Manipulación del DOM para mostrar productos dinámicamente"
+    - "Integraremos una API REST para obtener productos"
+    - "Implementaremos filtros y búsqueda de productos"
+    - "Optimizaremos el código usando patrones de JavaScript moderno"
     - "Todos nuestros avances serán versionados utilizando Git para
 gestionar nuestro repositorio en Github"
-    - "Deployment del proyecto en Vercel"
+    - "Deployment y optimización"
 price:
   regular: 79
   discount: 50

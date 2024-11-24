@@ -47,6 +47,7 @@ const {
   schedule,
   days,
   demo,
+  isLive
 } = courseData.data;
 
 const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
@@ -67,7 +68,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       <p class="max-w-2xl font-semibold text-lg mb-4 text-white">
         {description}
       </p>
-      <ul class="list-disc pl-5">
+      {isLive && (<ul class="list-disc pl-5">
         <li>Grupo reducido</li>
         <li>Clases EN VIVO</li>
         <li>Acceso a TODAS las sesiones grabadas</li>
@@ -76,11 +77,11 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
           aclares TODAS tus dudas
         </li>
         <li>PROYECTOS reales para tu PORTAFOLIO</li>
-      </ul>
+      </ul>)}
       <div class="dates flex gap-2 items-center mb-4 mt-10">
         <Image class="max-w-10" src={calendarImage} alt="Calendar" />
         <p class="text-base font-bold text-white">
-          INICIO: {formatDate(startDate)}
+          {isLive ? 'INICIO:' : ' LANZAMIENTO:'} {formatDate(startDate)}
         </p>
       </div>
 
@@ -155,7 +156,8 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
         </div>
       </div>
     </section>
-    <section class="details max-w-6xl mx-auto px-4 py-8">
+    {isLive && (
+      <section class="details max-w-6xl mx-auto px-4 py-8">
       <h2 class="text-center">Detalles del curso</h2>
       <div class="info pt-4 grid grid-cols-1 md:grid-cols-4 gap-2 mb-20">
         <div class="days mb-6 md:mb-0">
@@ -190,6 +192,7 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
         >
       </div>
     </section>
+    )}
     <section class="price py-16 grid grid-cols-1 justify-items-center">
       <h2>Precio del programa</h2>
       <Image class="w-40 lg:w-1/12" src={moneyImage} alt=" Price" />
@@ -201,9 +204,9 @@ const priceLabelStyle = price.discount > 0 ? 'line-through' :  ''
       </h3>
       {price.discount > 0 && <p class="mb-2 text-2xl">Precio con descuento</p>
       <h3 class="mb-8 text-4xl flex gap-2">
-        <Image class="max-w-8" src={peruFlag} alt="Peru" /> S/{
-          price.discount * 4
-        } o ${price.discount - 1}
+        <Image class="max-w-8" src={peruFlag} alt="Peru" /> {
+          `S/${(Math.round(price.regular - (price.regular * price.discount) / 100))  * 4}`
+        } o {`$${Math.round(price.regular - (price.regular * price.discount) / 100) - 1}`}
       </h3>
       <Link target="_blank" href={buyLink} variant="fill">
         Aprovechar el descuento!
