@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import Link from "./Link.astro";
+import calendarImage from "../assets/calendar.svg";
+import clockImage from "../assets/clock.svg";
+import peopleImage from "../assets/people.svg";
+import giftImage from "../assets/gift.svg";
+import { formatDate } from "../utils";
+
+const { data, slug } = Astro.props;
+const {
+  title,
+  description,
+  buyLink,
+  price,
+  schedule,
+  participants,
+  startDate,
+  gift,
+} = data;
+---
+
+<article
+  class="bg-white flex flex-wrap dark:border dark:border-black-border rounded-lg pb-6 content-between relative shadow-xl transition-transform hover:scale-[1.02] px-6 text-left"
+>
+  <h3 class="mt-6 mb-2 w-full dark:text-black/70 text-black/70">
+    {title}
+  </h3>
+  <div class="info grid grid-cols-1 gap-4 mt-4">
+    <div class="flex items-center gap-2">
+      <Image src={calendarImage} alt="Calendar" />
+      <span class="text-black/70">{formatDate(startDate)}</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <Image src={clockImage} alt="Clock" />
+      <span class="text-black/70">{schedule} </span>
+    </div>
+    <div class="flex items-center gap-2">
+      <Image src={peopleImage} alt="Participants" class="max-w-6" />
+      <span class="text-black/70">{participants} cupos disponibles</span>
+    </div>
+    <p
+      class="my-4 lg:min-h-28 text-left mb-6 dark:text-black/70 text-black/70 text-sm"
+    >
+      {description}
+    </p>
+  </div>
+
+  <div class="action flex items-center justify-between w-full">
+    <div class="prices">
+      {
+        price.discount > 0 && (
+          <span class="text-black/80 font-bold text-3xl">
+            ${price.regular - (price.regular * price.discount) / 100}
+          </span>
+        )
+      }
+      <span
+        class={`font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
+        >${price.regular}</span
+      >
+    </div>
+
+    <Link
+      target="_blank"
+      href={buyLink}
+      variant="fill"
+      extraClasses="px-6 text-sm"
+      >Registrarme
+    </Link>
+  </div>
+  <div class="gift w-full mt-6 flex gap-2 items-start">
+    <Image src={giftImage} alt="Gifts" />
+    <p class="text-black/70 dark:text-black/70 text-xs font-medium">{gift}</p>
+  </div>
+</article>

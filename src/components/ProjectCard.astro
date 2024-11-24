@@ -7,8 +7,10 @@ const { data } = Astro.props;
 const { title, description, repository } = data;
 ---
 
-<article class="border border-black-border rounded-lg p-6">
-  <h3 class="text-primary-300 mb-4">{title}</h3>
+<article
+  class="border border-black-border/10 dark:border-black-border rounded-lg p-6 shadow-lg"
+>
+  <h3 class="text-primary-300 dark:text-primary-300 mb-4">{title}</h3>
   <p class="mb-8 max-w-96 mx-auto">{description}</p>
   <div class="repo flex gap-2 items-center justify-center">
     <Image src={githubLogo} alt="Github" />

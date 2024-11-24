@@ -3,20 +3,21 @@ interface Props {
   href?: string;
   variant: "fill" | "outline" | "none";
   target?: "_blank" | "_self";
+  extraClasses?: string;
 }
 
-const { href, variant, target = "_self" } = Astro.props;
+const { href, variant, target = "_self", extraClasses } = Astro.props;
 
 const buttonClasses =
   variant === "fill"
-    ? "bg-primary-400 text-black"
+    ? "bg-primary-400 text-white"
     : "text-black/80 dark:text-white";
 
 const buttonBorder = variant === "none" ? "" : "p-3 border border-light-gray";
 ---
 
 <a
-  class=`block w-fit rounded-lg ${buttonBorder} ${buttonClasses}`
+  class=`block w-fit font-semibold rounded-lg ${buttonBorder} ${buttonClasses} ${extraClasses} hover:cursor-pointer`
   href={href}
   target={target}
 >

@@ -1,19 +1,17 @@
 ---
 title: "De 0 a la Web"
 description: "Aprende desde cero las tecnologías con las que podrás crear proyectos para la web."
-startDate: 2024-11-19
+startDate: 2024-03-04
 endDate: 2024-12-19
 days: "Martes y Jueves"
 schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/4rlgzv"
 available: true
+active: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
     answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
-
-  - question: "¿Cuáles son las fechas exactas del programa?"
-    answer: "El curso comienza el 19 de noviembre. Terminamos el 19 de diciembre."
 
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
@@ -95,7 +93,8 @@ project:
     - "Optimización para todos los dispositivos: Te enseñaremos a implementar Responsive Design, asegurando que tu tienda se vea perfecta tanto en dispositivos móviles como en ordenadores."
     - "Fundamentos de JavaScript para tu tienda online: Comienza a programar en JavaScript y entiende cómo este lenguaje potencia la interactividad en tu sitio web. Aprenderás a crear elementos dinámicos, manejar datos en tiempo real y mejorar la experiencia de usuario para tus clientes."
 price:
-  regular: 80
+  regular: 79
   discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
+isLive: true
 ---

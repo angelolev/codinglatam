@@ -14,21 +14,21 @@ if (!resourcesList) {
   title=`Recursos | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
-  <main>
-    <section class="pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center">
-      <h1 class="mb-12 leading-snug">
-        Recursos que te ayudarán a mejorar tu <span class="text-primary-300"
-          >APRENDIZAJE</span
-        >
-      </h1>
-      <p class="mb-12 max-w-4xl mx-auto">
-        Aquí encontrarás recursos que puedes utilizar en tus proyectos o en tu
-        aprendizaje para mejorar tus habilidades. Desde ebooks, cursos y
-        herramientas hasta consejos generales de programación.
-      </p>
-      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {resourcesList.map((item) => <ResourceCard {...item} />)}
-      </div>
-    </section>
-  </main>
+  <section
+    class="pt-20 md:pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center"
+  >
+    <h1 class="mb-12 leading-snug">
+      Recursos que te ayudarán a mejorar tu <span class="text-primary-300"
+        >APRENDIZAJE</span
+      >
+    </h1>
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
+      Aquí encontrarás recursos que puedes utilizar en tus proyectos o en tu
+      aprendizaje para mejorar tus habilidades. Desde ebooks, cursos y
+      herramientas hasta consejos generales de programación.
+    </p>
+    <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {resourcesList.map((item) => <ResourceCard {...item} />)}
+    </div>
+  </section>
 </Layout>

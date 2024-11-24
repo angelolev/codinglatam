@@ -14,21 +14,21 @@ if (!projectsList) {
   title=`Proyectos | Coding Latam`
   description="Aprende a programar haciendo proyectos reales"
 >
-  <main>
-    <section class="pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center">
-      <h1 class="mb-12 leading-snug">
-        Proyectos que puedes agregar a tu <span class="text-primary-300"
-          >PORTAFOLIO</span
-        >
-      </h1>
-      <p class="mb-12 max-w-4xl mx-auto">
-        Descubre cursos creados para llevar tus habilidades al siguiente nivel,
-        ya sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza
-        hoy y alcanza tus metas más rápido!
-      </p>
-      <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {projectsList.map((item) => <ProjectCard {...item} />)}
-      </div>
-    </section>
-  </main>
+  <section
+    class="pt-20 md:pt-12 px-6 max-w-6xl lg:px-0 mx-auto mb-8 text-center"
+  >
+    <h1 class="mb-12 leading-snug">
+      Proyectos que puedes agregar a tu <span class="text-primary-300"
+        >PORTAFOLIO</span
+      >
+    </h1>
+    <p class="mb-12 max-w-4xl mx-auto lg:text-lg">
+      Descubre cursos creados para llevar tus habilidades al siguiente nivel, ya
+      sea que estés empezando o busques perfeccionar tu dominio. ¡Empieza hoy y
+      alcanza tus metas más rápido!
+    </p>
+    <div class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      {projectsList.map((item) => <ProjectCard {...item} />)}
+    </div>
+  </section>
 </Layout>

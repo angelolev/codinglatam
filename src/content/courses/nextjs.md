@@ -1,20 +1,17 @@
 ---
-title: "Javascript para React"
-description:
-  "El JavaScript esencial que NADIE te explicó. El ÚNICO curso de JavaScript que necesitas para CONQUISTAR React"
-startDate: 2025-01-15
+title: "Next.js Desde Cero"
+description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
+startDate: 2025-01-07
 endDate: 2024-12-13
-days:
-  "Martes y Jueves"
-schedule:
-  "20:00 a 22:00 (GMT-5)"
+days: "Martes y Jueves"
+schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
-buyLink: "https://wa.link/pbtved"
+buyLink: "https://wa.link/m2bn6s"
 available: true
 active: true
 faqs:
   - question: "Si no sé nada de programación, ¿puedo participar?"
-    answer: "Sí. La idea es que este programa sea una guía para quienes recién empiezan este camino, para acompañarlos y orientarlos en este increíble mundo."
+    answer: "Lo ideal para llevar este curso es que tengas conocimientos previos de ReactJS para que puedas aprovechar al máximo todos los recursos que aprenderemos."
 
   - question: "¿Obtendré un certificado al terminar el curso?"
     answer: "Sí, un certificado digital será enviado al culminar el curso"
@@ -32,16 +29,39 @@ faqs:
         <li>PROYECTOS reales para tu PORTAFOLIO</li>
       </ul>
 topics:
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
-  - title: "TBD"
+  - title: "Introducción a Next.js"
+
+  - title: "Instalación y configuración inicial"
+
+  - title: "Primeros pasos: Tu primera página"
+
+  - title: "Sistema de enrutamiento automático"
+
+  - title: "Enrutamiento dinámico"
+
+  - title: "Uso de Link y useRouter"
+
+  - title: "Renderizado Estático (SSG)"
+
+  - title: "Renderizado del Lado del Servidor (SSR)"
+
+  - title: "Generación de Páginas Incremental (ISR)"
+
+  - title: "Integración de datos con APIs externas"
+
+  - title: "Creación de API Routes en Next.js"
+
+  - title: "Estilos globales y CSS en Next.js"
+
+  - title: "Estilizando con Tailwind CSS"
+
+  - title: "Optimización de imágenes con next/image"
+
+  - title: "Optimización de rendimiento"
+
+  - title: "SEO con Next.js"
+
+  - title: "Despliegue en Vercel"
 instructor:
   name: "Angelo Leva"
   description: |
@@ -58,20 +78,14 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Crearemos la estructura HTML de una landing page de un
-ecommerce basado en el figma"
-    - "Utilizaremos HTML semántico y nuevas etiquetas disponibles"
-    - "A esta landing page le aplicaremos CSS para agregar estilos a
-nuestro ecommerce"
-    - "A la misma página, le agregaremos Responsive Design para
-que nuestra web pueda verse bien en dispositivos móviles y
-PCs"
-    - "Todos nuestros avances serán versionados utilizando Git para
-gestionar nuestro repositorio en Github"
-    - "Deployment del proyecto en Vercel"
+    - "Aprende a configurar tu proyecto desde cero con Next.js para aprovechar el poder del rendering híbrido y una experiencia de desarrollo optimizada."
+    - "Implementaremos páginas dinámicas para categorías, productos y carrito de compras utilizando el enrutamiento basado en archivos de Next.js, garantizando una navegación rápida y eficiente."
+    - "Descubre cómo gestionar datos clave, como el estado del carrito de compras, utilizando Context API para mantener tu aplicación escalable y organizada."
+    - "Domina el uso de Tailwind CSS para crear diseños modernos, responsivos y personalizables sin esfuerzo."
+    - "Aprende a desplegar tu ecommerce de manera profesional en Vercel, la plataforma ideal para proyectos Next.js, asegurando rendimiento y disponibilidad."
 price:
-  regular: 79
+  regular: 99
   discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
-isLive: false
+isLive: true
 ---
