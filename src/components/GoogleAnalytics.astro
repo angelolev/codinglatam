@@ -1,0 +1,19 @@
+---
+const GA_TRACKING_ID = import.meta.env.PUBLIC_GA_TRACKING_ID;
+---
+
+<!-- Google Analytics Script -->
+<script type="text/partytown" define:vars={{ GA_TRACKING_ID }}>
+  // Google Analytics 4 (GA4) implementation
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", GA_TRACKING_ID);
+</script>
+
+<script
+  type="text/partytown"
+  src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+></script>

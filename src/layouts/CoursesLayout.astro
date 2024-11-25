@@ -10,6 +10,7 @@ import sunImage from "../assets/sun.svg";
 import moonImage from "../assets/moon.svg";
 import { Image } from "astro:assets";
 import ThemeToggle from "../components/ThemeToggle";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 
 interface Props {
   title: string;
@@ -30,6 +31,7 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
     <Opengraph title={title} description={description} />
+    <GoogleAnalytics />
   </head>
   <body class="bg-slate-100 dark:bg-light-black">
     <Nav client:load />
