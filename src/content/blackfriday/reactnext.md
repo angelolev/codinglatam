@@ -6,6 +6,7 @@ description: |
   <p class="dark:text-black/70 text-black/70 font-semibold text-sm">Incluye:</p>
 
   <ul class="dark:text-black/70 text-black/70 list-disc pl-8 mt-4 flex flex-col gap-2">
+    <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/javascript">Curso de Javascript para React</a></li>
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/react">Curso de cero a React</a></li>
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/nextjs">Curso de Next JS desde cero</a></li>
   </ul>
@@ -15,6 +16,7 @@ price:
   regular: 199
   discount: 25
 gifts:
+  - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
   - title: "ACCESO EXCLUSIVO al WORKSHOP EN VIVO: Portafolios que Contratan: Aprende a Destacar como Dev"
   - title: "ACCESO EXCLUSIVO AL WORKSHOP EN VIVO: Core Web Vitals para Frontends: La Guía Definitiva"
