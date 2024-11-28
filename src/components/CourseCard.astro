@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Link from "./Link.astro";
 import calendarImage from "../assets/calendar.svg";
 import clockImage from "../assets/clock.svg";
+import peruFlag from "../assets/peru.svg";
 import { formatDate } from "../utils";
 
 const { data, slug } = Astro.props;
@@ -18,6 +19,10 @@ const {
   days,
   isLive,
 } = data;
+
+const priceWithDiscount = Math.round(
+  price.regular - (price.regular * price.discount) / 100
+);
 
 if (!active) {
   return;
@@ -61,31 +66,34 @@ if (!active) {
     <span class="text-black/70 text-left">{days} {schedule} </span>
   </div> -->
   <p
-    class="px-6 my-4 lg:min-h-28 text-left mb-6 dark:text-black/70 text-black/70 text-sm"
+    class="px-6 my-4 lg:min-h-20 text-left mb-6 dark:text-black/70 text-black/70 text-sm"
   >
     {description}
   </p>
-  <div class="action px-6 flex items-center justify-between w-full">
-    <div class="prices">
+  <div class="action px-6 grid grid-cols-1 w-full">
+    <div class="prices mb-4">
       {
         price.discount > 0 && (
-          <span class="text-black/80 font-bold text-2xl">
-            {`$${Math.round(price.regular - (price.regular * price.discount) / 100) - 1}`}
+          <span class="text-black/80 font-bold text-2xl flex items-center justify-center gap-2">
+            <Image class="max-w-6" src={peruFlag} alt="Peru" />
+            {`S/${priceWithDiscount * 4} o $${priceWithDiscount - 1}`}
           </span>
         )
       }
       <span
         class={`font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
-        >${price.regular}</span
+        >S/{price.regular * 4} o ${price.regular}</span
       >
     </div>
 
-    <Link
-      target={available ? "_self" : "_blank"}
-      href={available ? `/cursos/${slug}` : buyLink}
-      variant="fill"
-      extraClasses="px-6 text-sm"
-      >{available ? "Ir al curso" : "Notifícame"}
-    </Link>
+    <div class="flex justify-center">
+      <Link
+        target={available ? "_self" : "_blank"}
+        href={available ? `/cursos/${slug}` : buyLink}
+        variant="fill"
+        extraClasses="px-6 text-sm"
+        >{available ? "Ir al curso" : "Notifícame"}
+      </Link>
+    </div>
   </div>
 </article>
