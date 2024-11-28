@@ -14,7 +14,7 @@ startDate: 2025-02-05
 buyLink: "https://wa.link/c5k2j3"
 price:
   regular: 199
-  discount: 25
+  discount: 50
 gifts:
   - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"
   - title: "Repositorio de preguntas típicas de una entrevista frontend"

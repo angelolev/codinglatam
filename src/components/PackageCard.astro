@@ -4,6 +4,7 @@ import Link from "./Link.astro";
 import calendarImage from "../assets/calendar.svg";
 import giftImage from "../assets/gift.svg";
 import { formatDate } from "../utils";
+import peruFlag from "../assets/peru.svg";
 
 const { data, slug } = Astro.props;
 const { title, description, price, startDate, gifts, buyLink } = data;
@@ -11,6 +12,10 @@ const { title, description, price, startDate, gifts, buyLink } = data;
 interface IGift {
   title: string;
 }
+
+const priceWithDiscount = Math.round(
+  price.regular - (price.regular * price.discount) / 100
+);
 ---
 
 <article
@@ -30,28 +35,33 @@ interface IGift {
     <div class="my-4" set:html={description} />
   </div>
 
-  <div class="action flex items-center justify-between w-full">
-    <div class="prices">
+  <div class="action w-full">
+    <div class="prices grid grid-cols-1 text-center my-4">
       {
         price.discount > 0 && (
-          <span class="text-black/80 font-bold text-3xl">
-            {`$${Math.round(price.regular - (price.regular * price.discount) / 100) - 1}`}
+          <span class="text-black/80 font-bold text-3xl flex items-center justify-center gap-2">
+            <Image class="max-w-6" src={peruFlag} alt="Peru" />
+            {`S/${priceWithDiscount * 4} o $${priceWithDiscount - 1} `}
           </span>
         )
       }
       <span
-        class={`font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
-        >${price.regular}</span
+        class={` flex items-center justify-center gap-2 mt-3 font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
+        ><Image class="max-w-6" src={peruFlag} alt="Peru" />S/{
+          price.regular * 4
+        } o ${price.regular}</span
       >
     </div>
 
-    <Link
-      target="_blank"
-      href={buyLink}
-      variant="fill"
-      extraClasses="px-6 text-sm"
-      >Registrarme
-    </Link>
+    <div class="flex justify-center">
+      <Link
+        target="_blank"
+        href={buyLink}
+        variant="fill"
+        extraClasses="px-6 text-sm"
+        >Registrarme
+      </Link>
+    </div>
   </div>
   {
     gifts && (
