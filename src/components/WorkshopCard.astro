@@ -6,6 +6,7 @@ import clockImage from "../assets/clock.svg";
 import peopleImage from "../assets/people.svg";
 import giftImage from "../assets/gift.svg";
 import { formatDate } from "../utils";
+import peruFlag from "../assets/peru.svg";
 
 const { data, slug } = Astro.props;
 const {
@@ -18,6 +19,9 @@ const {
   startDate,
   gift,
 } = data;
+
+const priceWithDiscount =
+  price.regular - (price.regular * price.discount) / 100;
 ---
 
 <article
@@ -46,28 +50,30 @@ const {
     </p>
   </div>
 
-  <div class="action flex items-center justify-between w-full">
-    <div class="prices">
+  <div class="action grid grid-cols-1 w-full">
+    <div class="prices mb-4">
       {
         price.discount > 0 && (
-          <span class="text-black/80 font-bold text-3xl">
-            ${price.regular - (price.regular * price.discount) / 100}
+          <span class="text-black/80 font-bold text-3xl flex items-center justify-center gap-2">
+            <Image class="max-w-6" src={peruFlag} alt="Peru" />
+            S/{priceWithDiscount * 4} o ${priceWithDiscount}
           </span>
         )
       }
       <span
-        class={`font-bold ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
-        >${price.regular}</span
+        class={`font-bold flex justify-center ${price.discount > 0 ? "text-2xl text-black/40 line-through" : "text-3xl text-black/80"}`}
+        >S/{price.regular * 4} o ${price.regular}</span
       >
     </div>
-
-    <Link
-      target="_blank"
-      href={buyLink}
-      variant="fill"
-      extraClasses="px-6 text-sm"
-      >Registrarme
-    </Link>
+    <div class="flex justify-center">
+      <Link
+        target="_blank"
+        href={buyLink}
+        variant="fill"
+        extraClasses="px-6 text-sm"
+        >Registrarme
+      </Link>
+    </div>
   </div>
   <div class="gift w-full mt-6 flex gap-2 items-start">
     <Image src={giftImage} alt="Gifts" />
