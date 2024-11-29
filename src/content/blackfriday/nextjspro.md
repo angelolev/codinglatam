@@ -11,8 +11,8 @@ description: |
 startDate: 2025-01-07
 buyLink: "https://wa.link/ncc60x"
 price:
-  regular: 199
-  discount: 70
+  regular: 144
+  discount: 55
 gifts:
   - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
