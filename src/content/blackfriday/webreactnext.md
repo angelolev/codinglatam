@@ -14,7 +14,7 @@ description: |
 startDate: 2025-02-04
 buyLink: "https://wa.link/asj2vq"
 price:
-  regular: 249
+  regular: 330
   discount: 50
 gifts:
   - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"

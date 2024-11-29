@@ -12,8 +12,8 @@ description: |
 startDate: 2025-02-04
 buyLink: "https://wa.link/3g6ixj"
 price:
-  regular: 149
-  discount: 60
+  regular: 199
+  discount: 65
 gifts:
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
   - title: "ACCESO EXCLUSIVO al WORKSHOP EN VIVO: Portafolios que Contratan: Aprende a Destacar como Dev"
