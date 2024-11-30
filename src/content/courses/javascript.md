@@ -58,7 +58,7 @@ project:
 gestionar nuestro repositorio en Github"
     - "Deployment y optimización"
 price:
-  regular: 79
+  regular: 39
   discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
 isLive: false
