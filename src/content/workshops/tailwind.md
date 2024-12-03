@@ -6,7 +6,7 @@ schedule: "10:00 a 12:00 (GMT-5)"
 participants: 11
 price:
   regular: 28
-  discount: 50
+  discount: 25
 gift: "Repositorio de preguntas típicas de una entrevista frontend"
 buyLink: "https://wa.link/sk8h4v"
 ---

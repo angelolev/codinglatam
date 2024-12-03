@@ -85,7 +85,7 @@ project:
     - "Aprende a desplegar tu ecommerce de manera profesional en Vercel, la plataforma ideal para proyectos Next.js, asegurando rendimiento y disponibilidad."
 price:
   regular: 99
-  discount: 50
+  discount: 40
 demo: "https://youtu.be/8HnNCDVL7TQ"
 isLive: true
 ---
