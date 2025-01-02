@@ -94,7 +94,7 @@ project:
     - "Fundamentos de JavaScript para tu tienda online: Comienza a programar en JavaScript y entiende cómo este lenguaje potencia la interactividad en tu sitio web. Aprenderás a crear elementos dinámicos, manejar datos en tiempo real y mejorar la experiencia de usuario para tus clientes."
 price:
   regular: 79
-  discount: 50
+  discount: 30
 demo: "https://youtu.be/8HnNCDVL7TQ"
 isLive: true
 ---
