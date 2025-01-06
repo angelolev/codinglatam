@@ -95,6 +95,6 @@ project:
 price:
   regular: 79
   discount: 30
-demo: "https://youtu.be/8HnNCDVL7TQ"
+demo: "https://youtu.be/he1QHTND0UU"
 isLive: true
 ---

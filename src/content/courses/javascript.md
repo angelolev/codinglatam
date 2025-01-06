@@ -1,13 +1,10 @@
 ---
 title: "Javascript para React"
-description:
-  "El JavaScript esencial que NADIE te explicó. El ÚNICO curso de JavaScript que necesitas para CONQUISTAR React"
+description: "El JavaScript esencial que NADIE te explicó. El ÚNICO curso de JavaScript que necesitas para CONQUISTAR React"
 startDate: 2025-01-15
 endDate: 2024-12-13
-days:
-  "Martes y Jueves"
-schedule:
-  "20:00 a 22:00 (GMT-5)"
+days: "Martes y Jueves"
+schedule: "20:00 a 22:00 (GMT-5)"
 figmaLink: "https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&node-type=canvas&t=fqlHxOpPqV4cbSdK-0"
 buyLink: "https://wa.link/0cynxu"
 available: true
@@ -47,18 +44,15 @@ instructor:
   role: "Senior Frontend Developer"
   linkedin: "https://www.linkedin.com/in/angeloleva/"
 project:
-  name: "Ecommerce"
+  name: "Componentes Javascript - Ecommerce"
   topics:
-    - "Crearemos la funcionalidad básica de un ecommerce utilizando JavaScript vanilla"
+    - "Crearemos la funcionalidad básica de un componente utilizando JavaScript vanilla"
     - "Manipulación del DOM para mostrar productos dinámicamente"
     - "Integraremos una API REST para obtener productos"
     - "Implementaremos filtros y búsqueda de productos"
     - "Optimizaremos el código usando patrones de JavaScript moderno"
-    - "Todos nuestros avances serán versionados utilizando Git para
-gestionar nuestro repositorio en Github"
-    - "Deployment y optimización"
 price:
-  regular: 39
+  regular: 29
   discount: 50
 demo: "https://youtu.be/8HnNCDVL7TQ"
 isLive: false
