@@ -8,7 +8,7 @@ description: |
   <ul class="dark:text-black/70 text-black/70 list-disc pl-8 mt-4 flex flex-col gap-2">
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/nextjs">Curso de Next JS desde cero</a></li>
   </ul>
-startDate: 2025-01-07
+startDate: 2025-03-02
 buyLink: "https://wa.link/ncc60x"
 price:
   regular: 144
@@ -16,6 +16,6 @@ price:
 gifts:
   - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
-  - title: "ACCESO EXCLUSIVO al WORKSHOP EN VIVO: Portafolios que Contratan: Aprende a Destacar como Dev"
-  - title: "ACCESO EXCLUSIVO AL WORKSHOP EN VIVO: Tailwind CSS en aplicaciones web modernas"
+  - title: "ACCESO EXCLUSIVO al WORKSHOP: Portafolios que Contratan: Aprende a Destacar como Dev"
+  - title: "ACCESO EXCLUSIVO AL WORKSHOP: Tailwind CSS en aplicaciones web modernas"
 ---

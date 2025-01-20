@@ -13,9 +13,9 @@ startDate: 2025-02-04
 buyLink: "https://wa.link/3g6ixj"
 price:
   regular: 138
-  discount: 40
+  discount: 10
 gifts:
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
-  - title: "ACCESO EXCLUSIVO al WORKSHOP EN VIVO: Portafolios que Contratan: Aprende a Destacar como Dev"
-  - title: "ACCESO EXCLUSIVO AL WORKSHOP EN VIVO: Tailwind CSS en aplicaciones web modernas"
+  - title: "ACCESO EXCLUSIVO al WORKSHOP: Portafolios que Contratan: Aprende a Destacar como Dev"
+  - title: "ACCESO EXCLUSIVO AL WORKSHOP: Tailwind CSS en aplicaciones web modernas"
 ---

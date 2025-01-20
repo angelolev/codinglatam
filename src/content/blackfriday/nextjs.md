@@ -8,7 +8,7 @@ description: |
   <ul class="dark:text-black/70 text-black/70 list-disc pl-8 mt-4 flex flex-col gap-2">
     <li class="dark:text-black/70 text-black/70 text-sm"><a target="_blank" class="underline underline-offset-4" href="/cursos/nextjs">Curso de Next JS desde cero</a></li>
   </ul>
-startDate: 2025-01-07
+startDate: 2025-03-02
 buyLink: "https://wa.link/m2bn6s"
 price:
   regular: 99
