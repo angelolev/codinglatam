@@ -14,10 +14,10 @@ startDate: 2025-02-05
 buyLink: "https://wa.link/c5k2j3"
 price:
   regular: 243
-  discount: 40
+  discount: 20
 gifts:
   - title: "Ebook 'Cómo triunfar en un proceso de entrevista'"
   - title: "Repositorio de preguntas típicas de una entrevista frontend"
-  - title: "ACCESO EXCLUSIVO al WORKSHOP EN VIVO: Portafolios que Contratan: Aprende a Destacar como Dev"
-  - title: "ACCESO EXCLUSIVO AL WORKSHOP EN VIVO: Tailwind CSS en aplicaciones web modernas"
+  - title: "ACCESO EXCLUSIVO al WORKSHOP: Portafolios que Contratan: Aprende a Destacar como Dev"
+  - title: "ACCESO EXCLUSIVO AL WORKSHOP: Tailwind CSS en aplicaciones web modernas"
 ---
