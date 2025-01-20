@@ -1,7 +1,7 @@
 ---
 title: "Next.js Desde Cero"
 description: "El Curso de Next.js que todo desarrollador Frontend debería tomar"
-startDate: 2025-01-07
+startDate: 2025-03-02
 endDate: 2024-12-13
 days: "Martes y Jueves"
 schedule: "20:00 a 22:00 (GMT-5)"
