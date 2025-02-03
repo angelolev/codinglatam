@@ -38,6 +38,8 @@ topics:
 
   - title: "¿Cómo se comunican los componentes (props)?"
 
+  - title: "Typescript y componentes en React"
+
   - title: "CSS en React"
 
   - title: "Eventos en React"
@@ -46,13 +48,17 @@ topics:
 
   - title: "¿Qué son los efectos (useEffect)?"
 
-  - title: "Estados de carga y error"
+  - title: "Data fetching: Estados de carga y error"
+
+  - title: "Hooks personalizados"
 
   - title: "Actualizando estados con useEffect"
 
   - title: "¿Qué es React context (useContext)?"
 
-  - title: "Organización de archivos y carpetas"
+  - title: "Arquitectura de archivos y carpetas"
+
+  - title: "Deployment y monitoreo"
 instructor:
   name: "Angelo Leva"
   description: |
