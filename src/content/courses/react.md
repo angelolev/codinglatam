@@ -2,7 +2,7 @@
 title: "De 0 a React"
 description: "Domina la biblioteca más popular del front-end y construye
   aplicaciones web dinámicas."
-startDate: 2025-02-05
+startDate: 2025-03-12
 endDate: 2024-12-13
 days: "Miércoles y Viernes"
 schedule: "20:00 a 22:00 (GMT-5)"
@@ -58,6 +58,8 @@ topics:
 
   - title: "Arquitectura de archivos y carpetas"
 
+  - title: "Integrando Firebase con React"
+
   - title: "Deployment y monitoreo"
 instructor:
   name: "Angelo Leva"
@@ -75,7 +77,7 @@ instructor:
 project:
   name: "Ecommerce"
   topics:
-    - "Desarrollo rápido con Vite + React: Aprende a configurar tu proyecto con Vite para obtener una experiencia de desarrollo increíblemente rápida y optimizada."
+    - "Desarrollo con Vite + React: Aprende a configurar tu proyecto con Vite para obtener una experiencia de desarrollo increíblemente rápida y optimizada."
     - "Crea un ecommerce completo: Implementaremos páginas de categorías, productos y carrito de compras con la potencia de React Router, brindando una experiencia de navegación fluida y eficiente."
     - "Manejo avanzado del estado con Context API: Aprende a agregar un contexto global a tu aplicación para gestionar datos clave como el estado del carrito de compras de manera sencilla y escalable."
     - "Estiliza tu proyecto con Tailwind CSS: Domina Tailwind CSS, el framework de estilos más popular, para crear diseños atractivos y personalizados en menos tiempo."
